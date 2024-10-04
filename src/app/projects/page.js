@@ -26,7 +26,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { MdImage } from "react-icons/md";
 import LoremGallery from "@/components/LoremGallery";
 
-function ButtonLink({ children, href }) {
+function ButtonLink({ children, href, ...rest }) {
   return (
     <Button
       as={Link}
@@ -37,9 +37,10 @@ function ButtonLink({ children, href }) {
       fontSize={"xl"}
       color={"primary.5"}
       fontWeight={"normal"}
+      {...rest}
     >
       {children}
-      <ExternalLinkIcon ml={"3px"} boxSize={"18px"} mt={"1px"} />
+      <ExternalLinkIcon ml={"3px"} boxSize={"18px"} />
     </Button>
   );
 }
@@ -63,7 +64,7 @@ export default function Work() {
           </Flex>
           <Text>
             A messaging board app where users can connect via user-created
-            boards, threads and replies all the while providing a clean,
+            boards, threads and replies. All the while providing a clean,
             intuitive, responsive and accessible user experience.
           </Text>
           <Flex
@@ -125,19 +126,27 @@ export default function Work() {
           </UnorderedList>
         </Box>
         <Divider borderColor={"primary.5"} />
-        <Box py={8}>
+        <Box py={8} maxW={"full"}>
           <Heading size={"lg"} color={"primary.5"} mb={1}>
             Extra
           </Heading>
           <Text mb={6}>
             As a programmer, every once in a while I like to take a break from
             building software and indulge my passion and curiosity for the raw
-            craft as well as the innate problem solving skills it requires.
-            Check out my solution for an intriguing Data Structures & Algorithms
-            coding problem I challenged myself with:
+            craft as well as the innate problem solving skills it requires. So
+            check out my solution for an intriguing Data Structures & Algorithms
+            coding problem I challenged myself with, perhaps you may find it as
+            satisyfing as I did:
           </Text>
-          <ButtonLink href="https://nicoll-douglas.github.io/knights-shortest-path/">
-            Knight&apos;s Shortest Path | A Solution by Nicoll Douglas
+          <ButtonLink
+            href="https://nicoll-douglas.github.io/knights-shortest-path/"
+            display="inline-block"
+          >
+            Knight&apos;s Shortest Path
+            <Box display={{ base: "none", md: "inline" }}>
+              {" "}
+              | A Solution by Nicoll Douglas
+            </Box>
           </ButtonLink>
         </Box>
       </Flex>

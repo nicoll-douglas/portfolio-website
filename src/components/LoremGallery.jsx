@@ -4,10 +4,8 @@ import {
   Image,
   Card,
   CardBody,
-  Center,
   Flex,
   IconButton,
-  VStack,
   HStack,
   CardHeader,
   Heading,
@@ -16,7 +14,6 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  SlideFade,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from "@chakra-ui/icons";
