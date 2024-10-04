@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { MdEmail } from "react-icons/md";
@@ -5,52 +6,101 @@ import {
   Icon,
   Heading,
   UnorderedList,
-  ListItem,
-  Link,
-  TabPanel,
+  Text,
+  useDisclosure,
+  Popover,
+  Button,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverArrow,
+  PopoverBody,
+  Box,
 } from "@chakra-ui/react";
 import SimpleSection from "@/components/SimpleSection";
 import { motion } from "framer-motion";
 import transitionProps from "@/config/transition";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { useEffect } from "react";
+import ButtonLink from "@/components/ButtonLink";
 
 export default function Contact() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const fontSize = "15px";
+
+  function handleCopyEmail() {
+    if (!isOpen) {
+      onOpen();
+      try {
+        navigator.clipboard.writeText("dev.nicoll.douglas@gmail.com");
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  }
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const timeout = setTimeout(onClose, 2000);
+    return () => clearTimeout(timeout);
+  }, [isOpen]);
+
   return (
     <motion.div {...transitionProps}>
       <SimpleSection
         avatar={{ src: "/work-3-op.svg", w: { base: "150px", md: "240px" } }}
       >
-        <Heading mb={{ base: 2, lg: 6 }}>Thanks for reaching out</Heading>
+        <Heading size={"4xl"}>Contact Me</Heading>
+        <Box>
+          <Text mb={2}>
+            Feel free to reach out and send me an email or connect with me
+            elsewhere.
+          </Text>
+          <Popover isOpen={isOpen} closeOnBlur>
+            <PopoverTrigger>
+              <Button
+                variant={"link"}
+                _active={{ color: "primary.6" }}
+                leftIcon={<Icon w={6} h={6} as={MdEmail} color={"primary.5"} />}
+                color={"primary.5"}
+                fontSize={"xl"}
+                fontWeight={"normal"}
+                onClick={handleCopyEmail}
+              >
+                dev.nicoll.douglas@gmail.com
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent maxW={"fit-content"}>
+              <PopoverArrow />
+              <PopoverBody fontSize={"md"}>Copied to clipboard!</PopoverBody>
+            </PopoverContent>
+          </Popover>
+        </Box>
+        <Heading size={"lg"} mt={4} mb={-4}>
+          Connect
+        </Heading>
         <UnorderedList
           listStyleType={"none"}
           ml={0}
+          pt={3}
           display={"flex"}
-          flexDir={"column"}
           gap={5}
-          fontSize={"lg"}
-          alignItems={{ base: "center", md: "start" }}
+          flexWrap={"wrap"}
+          justifyContent={{ base: "center", md: "start" }}
         >
-          <ListItem color={"primary.5"}>
-            <Link
-              display={"flex"}
-              alignItems={"center"}
-              href="mailto:dev.nicoll.douglas@gmail.com"
-            >
-              <Icon w={6} h={6} as={MdEmail} mr={1} color={"primary.5"} />
-              dev.nicoll.douglas@gmail.com
-            </Link>
-          </ListItem>
-          <ListItem color={"primary.5"}>
-            <Link
-              display={"flex"}
-              alignItems={"center"}
-              href="https://www.linkedin.com/in/nicoll-douglas-135624291/"
-              target="_blank"
-            >
-              <Icon as={FaLinkedin} h={6} w={6} mr={1} color={"primary.5"} />
-              @NicollDouglas
-            </Link>
-          </ListItem>
+          <ButtonLink
+            href="https://www.linkedin.com/in/nicoll-douglas-135624291/"
+            icon={<Icon as={FaLinkedin} h={6} w={6} color={"primary.5"} />}
+            variant={"external"}
+          >
+            @NicollDouglas
+          </ButtonLink>
+          <ButtonLink
+            variant={"external"}
+            href={"https://github.com/nicoll-douglas"}
+            icon={<Icon as={FaGithub} h={6} w={6} color={"primary.5"} />}
+          >
+            @nicoll-douglas
+          </ButtonLink>
         </UnorderedList>
       </SimpleSection>
     </motion.div>

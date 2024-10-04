@@ -6,6 +6,7 @@ import transitionProps from "@/config/transition";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiMongodb, SiExpress } from "react-icons/si";
 import SimpleSection from "@/components/SimpleSection";
+import StaticListItem from "@/components/StaticListItem";
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
       <SimpleSection
         avatar={{ src: "/work-1-op.svg", w: { base: "150px", md: "250px" } }}
       >
-        <Heading>About...</Heading>
+        <Heading size={"4xl"}>About...</Heading>
         <Text>
           {
             "Born and raised in London, I've become a passionate 21 year old developer with a strong foundation in both front-end and back-end technologies. With expertise in JavaScript, React, Node amongst many others, I thrive on building dynamic, user-friendly web applications that deliver seamless experiences."
@@ -24,8 +25,7 @@ export default function About() {
             "My approach combines a strong dedication for continuous learning with a keen mind for creative coding and robust problem-solving, enhanced by my previous backgrounds in art and maths."
           }
         </Text>
-        <Text>{"I also like to code in Java sometimes."}</Text>
-        <Heading size={"lg"} mb={-4} mt={4}>
+        <Heading size={"lg"} mb={-4} mt={6}>
           Core Skills
         </Heading>
         <UnorderedList
@@ -34,30 +34,14 @@ export default function About() {
           pt={3}
           display={"flex"}
           gap={5}
-          fontSize={"lg"}
           flexWrap={"wrap"}
           justifyContent={{ base: "center", md: "start" }}
         >
-          <ListItem display={"flex"} alignItems={"center"} color={"primary.5"}>
-            <Icon w={6} h={6} as={SiJavascript} mr={1} color={"primary.5"} />
-            JavaScript
-          </ListItem>
-          <ListItem display={"flex"} alignItems={"center"} color={"primary.5"}>
-            <Icon as={FaReact} h={6} w={6} mr={1} color={"primary.5"} />
-            React
-          </ListItem>
-          <ListItem display={"flex"} alignItems={"center"} color={"primary.5"}>
-            <Icon as={FaNodeJs} h={6} w={6} mr={1} color={"primary.5"} />
-            NodeJS
-          </ListItem>
-          <ListItem display={"flex"} alignItems={"center"} color={"primary.5"}>
-            <Icon as={SiExpress} h={6} w={6} mr={1} color={"primary.5"} />
-            ExpressJS
-          </ListItem>
-          <ListItem display={"flex"} alignItems={"center"} color={"primary.5"}>
-            <Icon as={SiMongodb} h={6} w={6} mr={1} color={"primary.5"} />
-            MongoDB
-          </ListItem>
+          <StaticListItem icon={SiJavascript}>JavaScript</StaticListItem>
+          <StaticListItem icon={FaReact}>React</StaticListItem>
+          <StaticListItem icon={FaNodeJs}>NodeJS</StaticListItem>
+          <StaticListItem icon={SiExpress}>ExpressJS</StaticListItem>
+          <StaticListItem icon={SiMongodb}>MongoDB</StaticListItem>
         </UnorderedList>
       </SimpleSection>
     </motion.div>

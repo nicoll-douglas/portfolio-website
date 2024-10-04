@@ -1,13 +1,14 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { Spinner } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 
 export default function Loading() {
-  const [show, setShow] = useState();
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(show, 400, true);
+    const timeout = setTimeout(() => setShow(true), 300);
     return () => clearTimeout(timeout);
   }, []);
 
