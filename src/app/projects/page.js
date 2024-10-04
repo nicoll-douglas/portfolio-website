@@ -49,11 +49,9 @@ export default function Work() {
 
   return (
     <motion.div {...transitionProps}>
-      <Flex gap={4} maxW={{ base: "lg", md: "4xl" }} flexDir={"column"} my={8}>
-        <Heading size={"4xl"} mb={4}>
-          Projects
-        </Heading>
-        <Box>
+      <Flex maxW={{ base: "lg", md: "4xl" }} flexDir={"column"} my={8}>
+        <Heading size={"4xl"}>Projects</Heading>
+        <Box py={8}>
           <Flex alignItems={"end"}>
             <Heading size={"2xl"} color={"primary.5"}>
               Lorem
@@ -64,12 +62,13 @@ export default function Work() {
             </Text>
           </Flex>
           <Text>
-            An intuitive messaging board app where users can connect through
-            dynamic discussion threads.
+            A messaging board app where users can connect via user-created
+            boards, threads and replies all the while providing a clean,
+            intuitive, responsive and accessible user experience.
           </Text>
           <Flex
             gap={5}
-            mt={5}
+            mt={3}
             mb={8}
             flexWrap={"wrap"}
             alignItems={"center"}
@@ -90,6 +89,14 @@ export default function Work() {
             >
               Source (backend)
             </ButtonLink>
+
+            <Button
+              rightIcon={<Icon as={MdImage} mt={"3px"} />}
+              variant={"outline"}
+              onClick={onOpen}
+            >
+              Gallery
+            </Button>
           </Flex>
           <Card
             variant={"outline"}
@@ -106,18 +113,9 @@ export default function Work() {
               <Image alt="Lorem demo" src="/lorem-gif-2.gif" />
             </CardBody>
           </Card>
-
-          <Button
-            rightIcon={<Icon as={MdImage} mt={"3px"} />}
-            variant={"outline"}
-            mb={6}
-            onClick={onOpen}
-          >
-            Gallery
-          </Button>
           <LoremGallery onClose={onClose} isOpen={isOpen} />
           <Heading size={"md"}>Technologies:</Heading>
-          <UnorderedList fontSize={"xl"} px={4} mb={6}>
+          <UnorderedList fontSize={"xl"} px={4}>
             <ListItem>React (TanStack Query & Hooks)</ListItem>
             <ListItem>MongoDB (Mongoose)</ListItem>
             <ListItem>NodeJS (Express)</ListItem>
@@ -125,6 +123,22 @@ export default function Work() {
             <ListItem>Chakra UI, Framer Motion</ListItem>
             <ListItem>Authentication (JSON Web Tokens)</ListItem>
           </UnorderedList>
+        </Box>
+        <Divider borderColor={"primary.5"} />
+        <Box py={8}>
+          <Heading size={"lg"} color={"primary.5"} mb={1}>
+            Extra
+          </Heading>
+          <Text mb={6}>
+            As a programmer, every once in a while I like to take a break from
+            building software and indulge my passion and curiosity for the raw
+            craft as well as the innate problem solving skills it requires.
+            Check out my solution for an intriguing Data Structures & Algorithms
+            coding problem I challenged myself with:
+          </Text>
+          <ButtonLink href="https://nicoll-douglas.github.io/knights-shortest-path/">
+            Knight&apos;s Shortest Path | A Solution by Nicoll Douglas
+          </ButtonLink>
         </Box>
       </Flex>
     </motion.div>

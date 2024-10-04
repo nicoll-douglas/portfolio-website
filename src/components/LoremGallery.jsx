@@ -54,7 +54,9 @@ export default function LoremGallery({ isOpen, onClose }) {
         >
           <CardHeader>
             <Flex alignItems={"center"}>
-              <Heading size={"sm"}>Gallery</Heading>
+              <Heading size={"sm"} color={"black"}>
+                Gallery
+              </Heading>
               <Spacer />
               <HStack gap={1}>
                 <IconButton
