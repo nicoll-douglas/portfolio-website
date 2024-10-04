@@ -52,8 +52,8 @@ export default function Contact() {
         <Heading size={"4xl"}>Contact Me</Heading>
         <Box>
           <Text mb={2}>
-            Feel free to reach out and send me an email or connect with me
-            elsewhere.
+            Need a London-based web developer? Feel free to reach out and send
+            me an email or connect with me elsewhere.
           </Text>
           <Popover isOpen={isOpen} closeOnBlur>
             <PopoverTrigger>

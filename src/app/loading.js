@@ -8,7 +8,7 @@ export default function Loading() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setShow(true), 300);
+    const timeout = setTimeout(() => setShow(true), 350);
     return () => clearTimeout(timeout);
   }, []);
 

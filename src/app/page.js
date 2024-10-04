@@ -21,7 +21,7 @@ export default function Home() {
           }
         </Text>
         <ButtonLink
-          href={"/work"}
+          href={"/projects"}
           onClick={() => setTabIndex(1)}
           mx={{ base: "auto", md: 0 }}
         >

@@ -18,7 +18,7 @@ export const TabContext = createContext();
 export default function AppLayout({ children }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  const paths = ["/", "/work", "/about", "/contact"];
+  const paths = ["/", "/projects", "/about", "/contact"];
   const [tabIndex, setTabIndex] = useState(
     paths.findIndex((path) => path === pathname) ?? -1
   );
@@ -75,8 +75,12 @@ export default function AppLayout({ children }) {
               <Tab as={NextLink} href={"/"} onClick={() => setTabIndex(0)}>
                 Home
               </Tab>
-              <Tab as={NextLink} href={"/work"} onClick={() => setTabIndex(1)}>
-                Work
+              <Tab
+                as={NextLink}
+                href={"/projects"}
+                onClick={() => setTabIndex(1)}
+              >
+                Projects
               </Tab>
               <Tab as={NextLink} href={"/about"} onClick={() => setTabIndex(2)}>
                 About
