@@ -74,17 +74,20 @@ export default function Work() {
           </Text>
           <UnorderedList
             display={"flex"}
-            gap={5}
-            ml={0}
-            mt={3}
-            mb={8}
+            gap={{ base: 0, md: 5 }}
+            px={{ base: 4, md: 0 }}
+            ml={{ md: 0 }}
+            mt={{ base: 6, md: 3 }}
+            mb={{ base: 10, md: 6 }}
+            fontSize={"xl"}
+            flexDir={{ base: "column", md: "row" }}
             flexWrap={"wrap"}
-            alignItems={"center"}
+            alignItems={{ base: "start", md: "center" }}
             justifyContent={"center"}
-            listStyleType={"none"}
+            listStylePosition={{ base: "outside", md: "inside" }}
             aria-label="Project Links"
           >
-            <ListItem>
+            <ListItem listStyleType={{ base: "disc", md: "none" }}>
               <ButtonLink
                 href={"https://nicoll-douglas.github.io/lorem-frontend/"}
               >
@@ -105,9 +108,9 @@ export default function Work() {
                 Source (backend)
               </ButtonLink>
             </ListItem>
-            <ListItem>
+            <ListItem mt={{ base: 1, md: 0 }}>
               <Button
-                rightIcon={<Icon as={MdImage} mt={"3px"} />}
+                rightIcon={<Icon as={MdImage} />}
                 variant={"outline"}
                 onClick={onOpen}
               >
@@ -123,7 +126,7 @@ export default function Work() {
             mb={6}
           >
             <CardHeader>
-              <Heading size={"md"} color={"black"}>
+              <Heading size={"md"} color={"black"} as={"h3"}>
                 Demo
               </Heading>
             </CardHeader>
@@ -144,7 +147,9 @@ export default function Work() {
             </CardBody>
           </Card>
           <LoremGallery onClose={onClose} isOpen={isOpen} />
-          <Heading size={"md"}>Technologies:</Heading>
+          <Heading size={"md"} as={"h3"}>
+            Technologies:
+          </Heading>
           <UnorderedList fontSize={"xl"} px={4}>
             <ListItem>React (TanStack Query & Hooks)</ListItem>
             <ListItem>MongoDB (Mongoose)</ListItem>

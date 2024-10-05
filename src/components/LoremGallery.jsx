@@ -93,11 +93,7 @@ export default function LoremGallery({ isOpen, onClose }) {
             {Array.from({ length: imageCount }).map((_, index) => (
               <Fragment key={index}>
                 {index === currentIndex && (
-                  <Fade
-                    in={true}
-                    offsetY={16}
-                    transition={{ enter: { delay: 0.09 } }}
-                  >
+                  <Fade in={true} transition={{ enter: { delay: 0.09 } }}>
                     <Image
                       alt="Lorem"
                       src={`/lorem-${index}.png`}
