@@ -123,7 +123,7 @@ export default function Work() {
             bg={"primary.3"}
             borderColor={"primary.5"}
             size={"sm"}
-            mb={6}
+            mb={10}
           >
             <CardHeader>
               <Heading size={"md"} color={"black"} as={"h3"}>
