@@ -15,7 +15,7 @@ import {
   ModalContent,
   Fade,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from "@chakra-ui/icons";
 import blurDataUrl from "@/constants/blurDataURL";
 import Image from "next/image";
@@ -91,7 +91,7 @@ export default function LoremGallery({ isOpen, onClose }) {
           <Divider opacity={1} borderColor={"primary.5"} />
           <CardBody>
             {Array.from({ length: imageCount }).map((_, index) => (
-              <>
+              <Fragment key={index}>
                 {index === currentIndex && (
                   <Fade
                     in={true}
@@ -110,7 +110,7 @@ export default function LoremGallery({ isOpen, onClose }) {
                     />
                   </Fade>
                 )}
-              </>
+              </Fragment>
             ))}
           </CardBody>
         </Card>
