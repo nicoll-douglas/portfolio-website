@@ -107,9 +107,11 @@ export default function Work() {
             mb={6}
           >
             <CardHeader>
-              <Heading size={"sm"}>Demo</Heading>
+              <Heading size={"md"} color={"black"}>
+                Demo
+              </Heading>
             </CardHeader>
-            <Divider borderColor={"primary.5"} />
+            <Divider borderColor={"primary.5"} opacity={1} />
             <CardBody>
               <Image alt="Lorem demo" src="/lorem-gif-2.gif" />
             </CardBody>

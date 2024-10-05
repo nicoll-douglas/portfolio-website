@@ -51,7 +51,7 @@ export default function LoremGallery({ isOpen, onClose }) {
         >
           <CardHeader>
             <Flex alignItems={"center"}>
-              <Heading size={"sm"} color={"black"}>
+              <Heading size={"md"} color={"black"}>
                 Gallery
               </Heading>
               <Spacer />
@@ -83,7 +83,7 @@ export default function LoremGallery({ isOpen, onClose }) {
               </HStack>
             </Flex>
           </CardHeader>
-          <Divider borderColor={"primary.5"} />
+          <Divider opacity={1} borderColor={"primary.5"} />
           <CardBody>
             {isOpen && <Image alt="Lorem" src={`/lorem-${currentIndex}.png`} />}
           </CardBody>
