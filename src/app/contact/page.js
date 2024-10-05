@@ -71,7 +71,7 @@ export default function Contact() {
                 dev.nicoll.douglas@gmail.com
               </Button>
             </PopoverTrigger>
-            <PopoverContent maxW={"fit-content"} bg="primary.4">
+            <PopoverContent maxW={"fit-content"} bg="primary.4" borderWidth="0">
               <PopoverArrow bg="primary.4" />
               <PopoverBody borderColor={"transparent"}>
                 <Text fontSize={"lg"}>Copied to clipboard!</Text>
