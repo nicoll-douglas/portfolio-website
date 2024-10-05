@@ -7,6 +7,7 @@ export default function SimpleSection({ avatar, children, ...rest }) {
       gap={{ base: 4, lg: 8 }}
       flexDir={{ base: "column-reverse", md: "row" }}
       maxW={{ base: "lg", md: "4xl" }}
+      my={8}
       {...rest}
     >
       <Flex

@@ -1,16 +1,10 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { Spinner } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import useDelayedFallback from "@/hooks/useDelayedFallback";
 
 export default function Loading() {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setShow(true), 350);
-    return () => clearTimeout(timeout);
-  }, []);
+  const show = useDelayedFallback();
 
   return show && <Spinner size={"lg"} color="primary.5" />;
 }

@@ -8,15 +8,17 @@ import {
   Card,
   CardBody,
   CardHeader,
+  Center,
   Divider,
   Flex,
   Heading,
   HStack,
   Icon,
-  Image,
   Link,
   ListItem,
+  ScaleFade,
   Spacer,
+  Spinner,
   Text,
   UnorderedList,
   useDisclosure,
@@ -25,6 +27,9 @@ import {
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { MdImage } from "react-icons/md";
 import LoremGallery from "@/components/LoremGallery";
+import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+import blurDataUrl from "@/constants/blurDataURL";
 
 function ButtonLink({ children, href, ...rest }) {
   return (
@@ -52,15 +57,11 @@ export default function Work() {
     <motion.div {...transitionProps}>
       <Flex maxW={{ base: "lg", md: "4xl" }} flexDir={"column"} my={8}>
         <Heading size={"4xl"}>Projects</Heading>
-        <Box py={8}>
+        <Box py={12}>
           <Flex alignItems={"end"}>
-            <Heading size={"2xl"} color={"primary.5"}>
-              Lorem
-            </Heading>
+            <Heading size={"2xl"}>Lorem</Heading>
             <Spacer />
-            <Text color={"primary.5"} fontWeight={"bold"}>
-              Jul 2024 - Oct 2024
-            </Text>
+            <Text color={"primary.5"}>Jul 2024 - Oct 2024</Text>
           </Flex>
           <Text>
             A messaging board app where users can connect via user-created
@@ -113,7 +114,18 @@ export default function Work() {
             </CardHeader>
             <Divider borderColor={"primary.5"} opacity={1} />
             <CardBody>
-              <Image alt="Lorem demo" src="/lorem-gif-2.gif" />
+              <ScaleFade in={true}>
+                <Image
+                  alt="Lorem demo"
+                  src="/lorem-gif-2.gif"
+                  width={1440}
+                  height={810}
+                  priority={true}
+                  style={{ borderRadius: "3px" }}
+                  placeholder="blur"
+                  blurDataURL={blurDataUrl}
+                />
+              </ScaleFade>
             </CardBody>
           </Card>
           <LoremGallery onClose={onClose} isOpen={isOpen} />
@@ -128,7 +140,7 @@ export default function Work() {
           </UnorderedList>
         </Box>
         <Divider borderColor={"primary.5"} />
-        <Box py={8} maxW={"full"}>
+        <Box py={12} maxW={"full"}>
           <Heading size={"lg"} color={"primary.5"} mb={1}>
             Extra
           </Heading>

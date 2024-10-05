@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Image,
   Card,
   CardBody,
   Flex,
@@ -17,6 +16,8 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon, CloseIcon } from "@chakra-ui/icons";
+import blurDataUrl from "@/constants/blurDataURL";
+import Image from "next/image";
 
 export default function LoremGallery({ isOpen, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -85,7 +86,15 @@ export default function LoremGallery({ isOpen, onClose }) {
           </CardHeader>
           <Divider opacity={1} borderColor={"primary.5"} />
           <CardBody>
-            {isOpen && <Image alt="Lorem" src={`/lorem-${currentIndex}.png`} />}
+            <Image
+              alt="Lorem"
+              src={`/lorem-${currentIndex}.png`}
+              width={1440}
+              height={810}
+              placeholder="blur"
+              blurDataURL={blurDataUrl}
+              loading="lazy"
+            />
           </CardBody>
         </Card>
       </ModalContent>
