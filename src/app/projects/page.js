@@ -59,7 +59,7 @@ export default function Work() {
         <Heading size={"4xl"} as={"h1"} maxW={"fit-content"}>
           Projects
         </Heading>
-        <Box py={12} as="section" aria-labelledby="lorem">
+        <Box mt={12} as="section" aria-labelledby="lorem">
           <Flex alignItems={"end"}>
             <Heading size={"2xl"} id="lorem">
               Lorem
@@ -77,8 +77,8 @@ export default function Work() {
             gap={{ base: 0, md: 5 }}
             px={{ base: 4, md: 0 }}
             ml={{ md: 0 }}
-            mt={{ base: 6, md: 3 }}
-            mb={{ base: 10, md: 6 }}
+            mt={{ base: 4, md: 5 }}
+            mb={{ base: 10, md: "30px" }}
             fontSize={"xl"}
             flexDir={{ base: "column", md: "row" }}
             flexWrap={"wrap"}
@@ -160,8 +160,8 @@ export default function Work() {
             <ListItem>JSON Web Tokens</ListItem>
           </UnorderedList>
         </Box>
-        <Divider borderColor={"primary.5"} />
-        <Box py={12} maxW={"full"} as="section" aria-labelledby="extra">
+        <Divider my={{ base: 10, md: 14 }} borderColor={"primary.5"} />
+        <Box maxW={"full"} as="section" aria-labelledby="extra">
           <Heading size={"lg"} mb={1} id="extra">
             Extra
           </Heading>
