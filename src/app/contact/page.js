@@ -57,7 +57,7 @@ export default function Contact() {
             Need a London-based web developer? Feel free to reach out and send
             me an email or connect with me elsewhere.
           </Text>
-          <Popover isOpen={isOpen} closeOnBlur>
+          <Popover isOpen={isOpen} closeOnBlur arrowShadowColor="primary.4">
             <PopoverTrigger>
               <Button
                 variant={"link"}
@@ -71,9 +71,11 @@ export default function Contact() {
                 dev.nicoll.douglas@gmail.com
               </Button>
             </PopoverTrigger>
-            <PopoverContent maxW={"fit-content"}>
-              <PopoverArrow />
-              <PopoverBody fontSize={"md"}>Copied to clipboard!</PopoverBody>
+            <PopoverContent maxW={"fit-content"} bg="primary.4">
+              <PopoverArrow bg="primary.4" />
+              <PopoverBody borderColor={"transparent"}>
+                <Text fontSize={"lg"}>Copied to clipboard!</Text>
+              </PopoverBody>
             </PopoverContent>
           </Popover>
         </Box>
