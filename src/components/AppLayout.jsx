@@ -19,6 +19,7 @@ function LinkTab({ href, children }) {
       href={href}
       marginBottom={"-2px"}
       borderBottomWidth={"2px"}
+      color={pathname === href ? "primary.5" : "black"}
       borderBottomColor={pathname === href ? "primary.5" : "transparent"}
     >
       {children}
