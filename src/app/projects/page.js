@@ -151,12 +151,13 @@ export default function Work() {
             <ListItem>NodeJS (Express)</ListItem>
             <ListItem>Firebase/Google Cloud</ListItem>
             <ListItem>Chakra UI, Framer Motion</ListItem>
-            <ListItem>Authentication (JSON Web Tokens)</ListItem>
+            <ListItem>Cypress (E2E Testing)</ListItem>
+            <ListItem>JSON Web Tokens</ListItem>
           </UnorderedList>
         </Box>
         <Divider borderColor={"primary.5"} />
         <Box py={12} maxW={"full"} as="section" aria-labelledby="extra">
-          <Heading size={"lg"} color={"primary.5"} mb={1} id="extra">
+          <Heading size={"lg"} mb={1} id="extra">
             Extra
           </Heading>
           <Text mb={6}>
