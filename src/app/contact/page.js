@@ -49,7 +49,9 @@ export default function Contact() {
       <SimpleSection
         avatar={{ src: "/work-3-op.svg", w: { base: "150px", md: "240px" } }}
       >
-        <Heading size={"4xl"}>Contact Me</Heading>
+        <Heading size={"4xl"} as={"h1"}>
+          Contact Me
+        </Heading>
         <Box>
           <Text mb={2}>
             Need a London-based web developer? Feel free to reach out and send

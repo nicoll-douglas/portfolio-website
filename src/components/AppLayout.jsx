@@ -1,27 +1,33 @@
 "use client";
 
-import {
-  Container,
-  Tabs,
-  Tab,
-  TabList,
-  Box,
-  Center,
-  TabPanels,
-} from "@chakra-ui/react";
+import { Container, Link, Box, Center, Flex } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { createContext, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
-export const TabContext = createContext();
+function LinkTab({ href, children }) {
+  const pathname = usePathname();
+
+  return (
+    <Link
+      py={3}
+      transitionProperty={"common"}
+      transitionDuration={"normal"}
+      _active={{ bg: "primary.4" }}
+      px={{ base: 3, sm: 4 }}
+      as={NextLink}
+      href={href}
+      marginBottom={"-2px"}
+      borderBottomWidth={"2px"}
+      borderBottomColor={pathname === href ? "primary.5" : "transparent"}
+    >
+      {children}
+    </Link>
+  );
+}
 
 export default function AppLayout({ children }) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
-  const paths = ["/", "/projects", "/about", "/contact"];
-  const [tabIndex, setTabIndex] = useState(
-    paths.findIndex((path) => path === pathname) ?? -1
-  );
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -44,63 +50,38 @@ export default function AppLayout({ children }) {
       pt={{ base: 24, md: 28 }}
       pb={{ base: 14, md: 28 }}
     >
-      <TabContext.Provider value={{ tabIndex, setTabIndex }}>
-        <Tabs
-          isManual
-          size={"lg"}
-          flex={1}
-          display={"flex"}
-          flexDir={"column"}
-          index={tabIndex}
+      <Box
+        position={"fixed"}
+        top={0}
+        w={"100dvw"}
+        left={0}
+        as={"header"}
+        pt={4}
+        boxShadow={isScrolled ? "xl" : "none"}
+        zIndex={"1000"}
+        style={{
+          transition: "box-shadow 1s ease",
+        }}
+      >
+        <Flex
+          borderBottomColor={"primary.1"}
+          borderBottomWidth={2}
+          mx={"auto"}
+          maxW={"fit-content"}
+          w={"100%"}
+          fontSize={"lg"}
+          minH={"fit-content"}
+          as={"nav"}
         >
-          <Box
-            position={"fixed"}
-            top={0}
-            w={"100dvw"}
-            left={0}
-            as={"header"}
-            pt={4}
-            boxShadow={isScrolled ? "xl" : "none"}
-            zIndex={"1000"}
-            style={{
-              transition: "box-shadow 1s ease",
-            }}
-          >
-            <TabList
-              maxWidth={"fit-content"}
-              mx={"auto"}
-              borderBottomColor={"primary.1"}
-              w={"100%"}
-            >
-              <Tab as={NextLink} href={"/"} onClick={() => setTabIndex(0)}>
-                Home
-              </Tab>
-              <Tab
-                as={NextLink}
-                href={"/projects"}
-                onClick={() => setTabIndex(1)}
-              >
-                Projects
-              </Tab>
-              <Tab as={NextLink} href={"/about"} onClick={() => setTabIndex(2)}>
-                About
-              </Tab>
-              <Tab
-                as={NextLink}
-                href={"/contact"}
-                onClick={() => setTabIndex(3)}
-              >
-                Contact
-              </Tab>
-            </TabList>
-          </Box>
-          <TabPanels flex={1} display={"flex"} flexDir={"column"}>
-            <Center flex={1} as="main">
-              {children}
-            </Center>
-          </TabPanels>
-        </Tabs>
-      </TabContext.Provider>
+          <LinkTab href={"/"}>Home</LinkTab>
+          <LinkTab href={"/projects"}>Projects</LinkTab>
+          <LinkTab href={"/about"}>About</LinkTab>
+          <LinkTab href={"/contact"}>Contact</LinkTab>
+        </Flex>
+      </Box>
+      <Center flex={1} as="main">
+        {children}
+      </Center>
     </Container>
   );
 }

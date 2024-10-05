@@ -14,7 +14,9 @@ export default function About() {
       <SimpleSection
         avatar={{ src: "/work-1-op.svg", w: { base: "150px", md: "250px" } }}
       >
-        <Heading size={"4xl"}>About...</Heading>
+        <Heading size={"4xl"} as={"h1"}>
+          About...
+        </Heading>
         <Text>
           {
             "Born and raised in London, I've become a passionate 21 year old developer with a strong foundation in both front-end and back-end technologies. With expertise in JavaScript, React, Node amongst many others, I thrive on building dynamic, user-friendly web applications that deliver seamless experiences."

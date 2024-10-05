@@ -58,7 +58,7 @@ export default function LoremGallery({ isOpen, onClose }) {
               <Spacer />
               <HStack gap={1}>
                 <IconButton
-                  icon={<ChevronLeftIcon boxSize={5} />}
+                  icon={<ChevronLeftIcon color={"black"} boxSize={5} />}
                   variant="ghost"
                   size="xs"
                   _hover={{ bg: "primary.2" }}
@@ -66,7 +66,7 @@ export default function LoremGallery({ isOpen, onClose }) {
                   onClick={handleLeft}
                 />
                 <IconButton
-                  icon={<ChevronRightIcon boxSize={5} />}
+                  icon={<ChevronRightIcon color={"black"} boxSize={5} />}
                   variant="ghost"
                   size="xs"
                   _hover={{ bg: "primary.2" }}
@@ -74,7 +74,7 @@ export default function LoremGallery({ isOpen, onClose }) {
                   onClick={handleRight}
                 />
                 <IconButton
-                  icon={<CloseIcon boxSize={"10px"} />}
+                  icon={<CloseIcon color={"black"} boxSize={"10px"} />}
                   variant="ghost"
                   size="xs"
                   _hover={{ bg: "primary.2" }}
@@ -94,6 +94,7 @@ export default function LoremGallery({ isOpen, onClose }) {
               placeholder="blur"
               blurDataURL={blurDataUrl}
               loading="lazy"
+              style={{ borderRadius: "3px" }}
             />
           </CardBody>
         </Card>

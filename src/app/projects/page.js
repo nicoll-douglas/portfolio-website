@@ -56,10 +56,14 @@ export default function Work() {
   return (
     <motion.div {...transitionProps}>
       <Flex maxW={{ base: "lg", md: "4xl" }} flexDir={"column"} my={8}>
-        <Heading size={"4xl"}>Projects</Heading>
-        <Box py={12}>
+        <Heading size={"4xl"} as={"h1"} maxW={"fit-content"}>
+          Projects
+        </Heading>
+        <Box py={12} as="section" aria-labelledby="lorem">
           <Flex alignItems={"end"}>
-            <Heading size={"2xl"}>Lorem</Heading>
+            <Heading size={"2xl"} id="lorem">
+              Lorem
+            </Heading>
             <Spacer />
             <Text color={"primary.5"}>Jul 2024 - Oct 2024</Text>
           </Flex>
@@ -68,38 +72,49 @@ export default function Work() {
             boards, threads and replies. All the while providing a clean,
             intuitive, responsive and accessible user experience.
           </Text>
-          <Flex
+          <UnorderedList
+            display={"flex"}
             gap={5}
+            ml={0}
             mt={3}
             mb={8}
             flexWrap={"wrap"}
             alignItems={"center"}
             justifyContent={"center"}
+            listStyleType={"none"}
+            aria-label="Project Links"
           >
-            <ButtonLink
-              href={"https://nicoll-douglas.github.io/lorem-frontend/"}
-            >
-              Live Site
-            </ButtonLink>
-            <ButtonLink
-              href={"https://github.com/nicoll-douglas/lorem-frontend"}
-            >
-              Source (frontend)
-            </ButtonLink>
-            <ButtonLink
-              href={"https://github.com/nicoll-douglas/lorem-backend"}
-            >
-              Source (backend)
-            </ButtonLink>
-
-            <Button
-              rightIcon={<Icon as={MdImage} mt={"3px"} />}
-              variant={"outline"}
-              onClick={onOpen}
-            >
-              Gallery
-            </Button>
-          </Flex>
+            <ListItem>
+              <ButtonLink
+                href={"https://nicoll-douglas.github.io/lorem-frontend/"}
+              >
+                Live Site
+              </ButtonLink>
+            </ListItem>
+            <ListItem>
+              <ButtonLink
+                href={"https://github.com/nicoll-douglas/lorem-frontend"}
+              >
+                Source (frontend)
+              </ButtonLink>
+            </ListItem>
+            <ListItem>
+              <ButtonLink
+                href={"https://github.com/nicoll-douglas/lorem-backend"}
+              >
+                Source (backend)
+              </ButtonLink>
+            </ListItem>
+            <ListItem>
+              <Button
+                rightIcon={<Icon as={MdImage} mt={"3px"} />}
+                variant={"outline"}
+                onClick={onOpen}
+              >
+                Gallery
+              </Button>
+            </ListItem>
+          </UnorderedList>
           <Card
             variant={"outline"}
             bg={"primary.3"}
@@ -140,8 +155,8 @@ export default function Work() {
           </UnorderedList>
         </Box>
         <Divider borderColor={"primary.5"} />
-        <Box py={12} maxW={"full"}>
-          <Heading size={"lg"} color={"primary.5"} mb={1}>
+        <Box py={12} maxW={"full"} as="section" aria-labelledby="extra">
+          <Heading size={"lg"} color={"primary.5"} mb={1} id="extra">
             Extra
           </Heading>
           <Text mb={6}>
