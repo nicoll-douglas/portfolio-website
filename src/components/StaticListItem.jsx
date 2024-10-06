@@ -10,7 +10,14 @@ export default function StaticListItem({ icon, children }) {
       color={"primary.5"}
       fontSize={"xl"}
     >
-      <Icon w={6} h={6} as={icon} mr={1} color={"primary.5"} />
+      <Icon
+        aria-hidden={true}
+        w={6}
+        h={6}
+        as={icon}
+        mr={1}
+        color={"primary.5"}
+      />
       {children}
     </ListItem>
   );
