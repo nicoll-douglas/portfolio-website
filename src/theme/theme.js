@@ -59,6 +59,12 @@ const theme = extendTheme({
             bg: "primary.4",
           },
         },
+        link: {
+          color: "primary.5",
+          _active: {
+            color: "primary.6",
+          },
+        },
       },
     },
     Text: {

@@ -110,9 +110,17 @@ export default function Work() {
             </ListItem>
             <ListItem mt={{ base: 1, md: 0 }}>
               <Button
-                rightIcon={<Icon as={MdImage} />}
-                variant={"outline"}
+                rightIcon={
+                  <Icon
+                    boxSize={{ base: "18px", md: 4 }}
+                    mt={{ base: "2px", md: 0 }}
+                    as={MdImage}
+                  />
+                }
+                variant={{ base: "link", md: "outline" }}
                 onClick={onOpen}
+                size={{ base: "xl", md: "md" }}
+                fontWeight={{ base: 400, md: 600 }}
               >
                 Gallery
               </Button>
@@ -157,7 +165,6 @@ export default function Work() {
             <ListItem>Firebase/Google Cloud</ListItem>
             <ListItem>Chakra UI, Framer Motion</ListItem>
             <ListItem>Cypress (E2E Testing)</ListItem>
-            <ListItem>JSON Web Tokens</ListItem>
           </UnorderedList>
         </Box>
         <Divider my={{ base: 10, md: 14 }} borderColor={"primary.5"} />

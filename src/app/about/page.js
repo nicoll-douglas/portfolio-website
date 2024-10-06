@@ -15,7 +15,7 @@ export default function About() {
         avatar={{ src: "/work-1-op.svg", w: { base: "150px", md: "250px" } }}
       >
         <Heading size={"4xl"} as={"h1"}>
-          About...
+          About
         </Heading>
         <Text>
           {

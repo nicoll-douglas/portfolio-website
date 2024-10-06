@@ -1,5 +1,6 @@
 import { Button, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 export default function ButtonLink({ variant, icon, children, href, ...rest }) {
   if (variant === "external") {
@@ -26,6 +27,7 @@ export default function ButtonLink({ variant, icon, children, href, ...rest }) {
       size={"lg"}
       as={NextLink}
       href={href}
+      rightIcon={<ArrowForwardIcon mt={"3px"} />}
       fontSize={"xl"}
       {...rest}
     >
