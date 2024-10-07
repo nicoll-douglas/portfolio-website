@@ -143,7 +143,7 @@ export default function Work() {
               <ScaleFade in={true}>
                 <Image
                   alt="Lorem demo"
-                  src="/lorem-gif-2.gif"
+                  src="/lorem-gif.gif"
                   width={1440}
                   height={810}
                   priority={true}
