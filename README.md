@@ -1,6 +1,6 @@
 # Portfolio Website
 
-The repo for my web dev portfolio. The [site](https://portfolio-website-weld-nu.vercel.app/) that aggregates my best web dev work thus far.
+The repo for [my web dev portfolio](https://portfolio-website-weld-nu.vercel.app/). The site that aggregates my best web dev work thus far.
 
 ## Technologies
 
