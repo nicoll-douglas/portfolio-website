@@ -92,7 +92,7 @@ export default function Contact() {
           justifyContent={{ base: "center", md: "start" }}
         >
           <ButtonLink
-            href="https://www.linkedin.com/in/nicoll-douglas-135624291/"
+            href="https://www.linkedin.com/in/nicoll-douglas/"
             icon={<Icon as={FaLinkedin} h={6} w={6} color={"primary.5"} />}
             variant={"external"}
           >
