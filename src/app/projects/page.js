@@ -59,7 +59,7 @@ export default function Work() {
         <Heading size={"4xl"} as={"h1"} maxW={"fit-content"}>
           Projects
         </Heading>
-        <Box mt={12} as="section" aria-labelledby="lorem">
+        <Box mt={12} as="section" aria-labelledby="lorem" id="lorem">
           <Flex alignItems={"end"}>
             <Heading size={"2xl"} id="lorem">
               Lorem
@@ -168,7 +168,7 @@ export default function Work() {
           </UnorderedList>
         </Box>
         <Divider my={{ base: 10, md: 14 }} borderColor={"primary.5"} />
-        <Box maxW={"full"} as="section" aria-labelledby="extra">
+        <Box maxW={"full"} as="section" aria-labelledby="extra" id="extra">
           <Heading size={"lg"} mb={1} id="extra">
             Extra
           </Heading>
