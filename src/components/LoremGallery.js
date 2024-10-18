@@ -20,7 +20,7 @@ export default function LoremGallery() {
         filename: "lorem-demo.gif",
       },
       {
-        label: "Home Page",
+        label: "Homepage",
         filename: "lorem-home.png",
       },
       {
@@ -28,11 +28,11 @@ export default function LoremGallery() {
         filename: "lorem-in-app.png",
       },
       {
-        label: "Board Page",
+        label: "Board",
         filename: "lorem-board.png",
       },
       {
-        label: "Thread Page",
+        label: "Thread",
         filename: "lorem-thread.png",
       },
       {

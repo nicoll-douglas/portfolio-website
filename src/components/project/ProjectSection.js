@@ -15,7 +15,7 @@ export default function ProjectSection({
         <Spacer />
         <Text color={"primary.5"}>{date}</Text>
       </Flex>
-      <Text mb={{ base: 3, md: 4 }}>{description}</Text>
+      <Text>{description}</Text>
       {children}
     </Box>
   );

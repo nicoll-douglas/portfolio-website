@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import LoremGallery from "@/components/LoremGallery";
 import PageTransition from "@/components/common/PageTransition";
 import TechList from "@/components/common/TechList";
@@ -24,9 +24,9 @@ export default function Work() {
         </Heading>
         <ProjectSection
           projectName={"Meshara"}
-          date={"Sep 2024 - Oct 2024"}
+          date={"Oct 2024"}
           description={
-            "Clean, modern and performant website built for a freelance client, focused on a seamless and state of the art UI/UX."
+            "A clean, modern and performant website built for a freelance client, focused on a smooth and state-of-the-art UI/UX. Actively honing my client-developer communication skills, I ensured consistent updates and collaborative feedback throughout the project in order to align with the client's vision."
           }
         >
           <ProjectLinks
@@ -41,15 +41,38 @@ export default function Work() {
               },
             ]}
           />
+          <Text
+            fontStyle={"italic"}
+            fontSize={"lg"}
+            color={"primary.5"}
+            fontWeight={"bold"}
+            textAlign={"center"}
+            mx={{ base: 0, md: 8 }}
+          >
+            &quot;Working with Nicoll was a seamless experience. He delivered an
+            amazing website that exceeded our expectations and truly represents
+            our startup. The attention to detail and timely delivery were
+            outstanding.&quot;{" "}
+            <Box
+              fontStyle={"normal"}
+              mt={1}
+              color={"black"}
+              as="span"
+              display={"block"}
+              fontWeight={"normal"}
+            >
+              - Adrian Davies, Client
+            </Box>
+          </Text>
           <MesharaGallery />
-          <TechList list={["NextJS", "RadixUI"]} />
+          <TechList list={["NextJS", "RadixUI", "Figma"]} />
         </ProjectSection>
         <ProjectDivider />
         <ProjectSection
           projectName={"Lorem"}
           date="Jul 2024 - Oct 2024"
           description={
-            "A messaging board app where users can connect via user-created boards, threads and replies. All the while providing a clean, intuitive, responsive and accessible user experience."
+            "A messaging board app where users can connect via user-created boards, threads and replies. All the while providing a clean, intuitive, responsive and accessible user experience. Built using decoupled architecture and meant for those who enjoy the forum-like style of internet communicaton pre-social-media."
           }
         >
           <ProjectLinks

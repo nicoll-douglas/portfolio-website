@@ -7,6 +7,7 @@ export default function GalleryCard({ children, ...rest }) {
       bg={"primary.3"}
       borderColor={"primary.5"}
       size={"sm"}
+      mt={{ base: 10, md: 8 }}
       mb={10}
       {...rest}
     >

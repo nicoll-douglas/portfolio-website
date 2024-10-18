@@ -11,6 +11,9 @@ const styles = {
     header: {
       backgroundColor: "primary.3",
     },
+    "::selection": {
+      backgroundColor: "primary.4",
+    },
   },
 };
 

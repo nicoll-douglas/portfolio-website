@@ -1,14 +1,14 @@
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import ExternalLink from "../common/ExternalLink";
 
-export default function ProjectLinks({ links }) {
+export default function ProjectLinks({ links, ...rest }) {
   return (
     <UnorderedList
       display={"flex"}
       gap={{ base: 0, md: 5 }}
       px={{ base: 4, md: 0 }}
+      my={{ base: 5, md: 4 }}
       ml={{ md: 0 }}
-      mb={{ base: 10, md: "30px" }}
       fontSize={"xl"}
       flexDir={{ base: "column", md: "row" }}
       flexWrap={"wrap"}
@@ -16,6 +16,7 @@ export default function ProjectLinks({ links }) {
       justifyContent={"center"}
       listStylePosition={{ base: "outside", md: "inside" }}
       aria-label="Project Links"
+      {...rest}
     >
       {links.map(({ name, href }, index) => (
         <ListItem
