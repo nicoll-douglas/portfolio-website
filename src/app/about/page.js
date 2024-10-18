@@ -3,6 +3,11 @@ import SimpleSection from "@/components/common/SimpleSection";
 import PageTransition from "@/components/common/PageTransition";
 import CoreSkills from "@/components/CoreSkills";
 
+export const metadata = {
+  title: "Nicoll Douglas | About",
+  description: "About Nicoll Douglas.",
+};
+
 export default function About() {
   return (
     <PageTransition>

@@ -3,6 +3,11 @@ import { Heading, Text } from "@chakra-ui/react";
 import ButtonLink from "@/components/common/ButtonLink";
 import PageTransition from "@/components/common/PageTransition";
 
+export const metadata = {
+  title: "404 | Not Found",
+  description: "Page could not be found.",
+};
+
 export default function NotFound() {
   return (
     <PageTransition>

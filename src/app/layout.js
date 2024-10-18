@@ -5,11 +5,6 @@ import { Container, Center } from "@chakra-ui/react";
 
 const itim = Itim({ subsets: ["latin"], weight: "400" });
 
-export const metadata = {
-  title: "Nicoll Douglas | Full-Stack Web Developer",
-  description: "Nicoll Douglas is a full-stack web developer based in London.",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

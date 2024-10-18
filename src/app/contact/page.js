@@ -4,6 +4,11 @@ import EmailCopyBtn from "@/components/EmailCopyBtn";
 import PageTransition from "@/components/common/PageTransition";
 import Socials from "@/components/Socials";
 
+export const metadata = {
+  title: "Nicoll Douglas | Contact",
+  description: "Contact Nicoll Douglas, a full-stack web developer.",
+};
+
 export default function Contact() {
   return (
     <PageTransition>
@@ -17,7 +22,7 @@ export default function Contact() {
           Contact Me
         </Heading>
         <Box>
-          <Text mb={3}>
+          <Text mb={2}>
             Need a London-based web developer? Feel free to reach out and send
             me an email or connect with me elsewhere.
           </Text>
