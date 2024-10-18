@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 
-export default function useDelayedFallback(delay = 350) {
+export default function useDelayFallback(delay = 350) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {

@@ -1,10 +1,10 @@
 "use client";
 
 import { Spinner } from "@chakra-ui/react";
-import useDelayedFallback from "@/hooks/useDelayedFallback";
+import useDelayFallback from "@/hooks/useDelayFallback";
 
 export default function Loading() {
-  const show = useDelayedFallback();
+  const show = useDelayFallback();
 
   return show && <Spinner size={"lg"} color="primary.5" />;
 }
