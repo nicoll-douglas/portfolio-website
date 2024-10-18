@@ -24,8 +24,8 @@ export default function About() {
           Born and raised in London, I&apos;ve become a passionate 21 year old
           developer with a strong foundation in both front-end and back-end
           technologies. With expertise in JavaScript, React and NodeJS amongst
-          many other technologies, I thrive on building dynamic, user-friendly
-          web applications that deliver flawless experiences.
+          many others, I thrive on building dynamic, user-friendly web
+          applications that deliver flawless experiences.
         </Text>
         <Text>
           My approach combines a strong dedication for continuous learning with
