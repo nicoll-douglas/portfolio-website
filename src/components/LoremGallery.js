@@ -96,7 +96,7 @@ export default function LoremGallery({ isOpen, onClose }) {
                   <Fade in={true} transition={{ enter: { delay: 0.09 } }}>
                     <Image
                       alt="Lorem"
-                      src={`/lorem-${index}.png`}
+                      src={`/projects/lorem/lorem-${index}.png`}
                       width={1440}
                       height={810}
                       placeholder="blur"

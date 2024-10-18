@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
