@@ -61,7 +61,7 @@ export default function Work() {
               display={"block"}
               fontWeight={"normal"}
             >
-              - Adrian Davies, Client
+              - Adrian Davies, Founder @ Meshara
             </Box>
           </Text>
           <MesharaGallery />
