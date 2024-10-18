@@ -2,7 +2,7 @@
 
 import { Heading, Text } from "@chakra-ui/react";
 import SimpleSection from "@/components/common/SimpleSection";
-import ButtonLink from "@/components/ButtonLink";
+import ButtonLink from "@/components/common/ButtonLink";
 import PageTransition from "@/components/common/PageTransition";
 
 export default function Home() {

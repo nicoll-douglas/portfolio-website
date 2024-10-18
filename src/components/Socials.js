@@ -1,7 +1,7 @@
 "use client";
 
 import { UnorderedList, Icon, Box, Heading } from "@chakra-ui/react";
-import ButtonLink from "./ButtonLink";
+import ButtonLink from "./common/ButtonLink";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Socials() {

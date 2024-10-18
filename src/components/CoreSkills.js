@@ -1,6 +1,6 @@
 "use client";
 
-import StaticListItem from "./StaticListItem";
+import StaticListItem from "./common/StaticListItem";
 import { Box, Heading, UnorderedList } from "@chakra-ui/react";
 import { SiJavascript, SiExpress, SiMongodb } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";

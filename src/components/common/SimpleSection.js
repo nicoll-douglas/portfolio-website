@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import Avatar from "../Avatar";
+import Avatar from "./Avatar";
 
 export default function SimpleSection({ avatar, children, ...rest }) {
   return (
