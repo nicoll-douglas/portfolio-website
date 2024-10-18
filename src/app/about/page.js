@@ -30,7 +30,7 @@ export default function About() {
         <Text>
           My approach combines a strong dedication for continuous learning with
           a keen mind for innovation and robust problem-solving, enhanced by my
-          previous backgrounds in art and maths.
+          previous backgrounds in fine art and maths.
         </Text>
         <CoreSkills />
       </SimpleSection>
