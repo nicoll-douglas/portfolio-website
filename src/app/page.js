@@ -1,15 +1,14 @@
 "use client";
 
 import { Heading, Text } from "@chakra-ui/react";
-import SimpleSection from "@/components/SimpleSection";
+import SimpleSection from "@/components/common/SimpleSection";
 import ButtonLink from "@/components/ButtonLink";
-import { motion } from "framer-motion";
-import transitionProps from "@/config/transition";
+import PageTransition from "@/components/common/PageTransition";
 
 export default function Home() {
   return (
-    <motion.div {...transitionProps}>
-      <SimpleSection avatar={{ src: "/main-op.svg" }}>
+    <PageTransition>
+      <SimpleSection avatar={{ src: "/avatars/optimised/main-op.svg" }}>
         <Heading mb={{ base: 0, lg: 2 }}>{"Hi, I'm Nicoll"}</Heading>
         <Text>
           {
@@ -20,6 +19,6 @@ export default function Home() {
           View my work
         </ButtonLink>
       </SimpleSection>
-    </motion.div>
+    </PageTransition>
   );
 }

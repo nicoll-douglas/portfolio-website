@@ -1,16 +1,16 @@
-"use client";
-
-import SimpleSection from "@/components/SimpleSection";
+import SimpleSection from "@/components/common/SimpleSection";
 import { Heading, Text } from "@chakra-ui/react";
 import ButtonLink from "@/components/ButtonLink";
-import transitionProps from "@/config/transition";
-import { motion } from "framer-motion";
+import PageTransition from "@/components/common/PageTransition";
 
 export default function NotFound() {
   return (
-    <motion.div {...transitionProps}>
+    <PageTransition>
       <SimpleSection
-        avatar={{ src: "/not-found-op.svg", w: { base: "250px", md: "350px" } }}
+        avatar={{
+          src: "/avatars/optimised/not-found-op.svg",
+          w: { base: "250px", md: "350px" },
+        }}
       >
         <Heading mx={{ base: "auto", md: 0 }} as={"h1"} size={"4xl"}>
           Not Found
@@ -22,6 +22,6 @@ export default function NotFound() {
           Return to home
         </ButtonLink>
       </SimpleSection>
-    </motion.div>
+    </PageTransition>
   );
 }
