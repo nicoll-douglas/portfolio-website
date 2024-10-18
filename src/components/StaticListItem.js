@@ -1,5 +1,3 @@
-"use client";
-
 import { ListItem, Icon } from "@chakra-ui/react";
 
 export default function StaticListItem({ icon, children }) {
