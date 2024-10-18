@@ -4,7 +4,12 @@ export default function GalleryCardHeader({ heading, children, ...rest }) {
   return (
     <>
       <CardHeader {...rest}>
-        <Heading size={"md"} color={"black"} as={"h3"} maxW={"fit-content"}>
+        <Heading
+          size={"md"}
+          color={"black"}
+          maxW={"fit-content"}
+          as="figcaption"
+        >
           {heading}
         </Heading>
         {children}

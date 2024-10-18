@@ -9,7 +9,7 @@ export default function GalleryBtn({ type, ...rest }) {
 
   return (
     <IconButton
-      icon={<Icon color={"black"} boxSize={5} />}
+      icon={<Icon color={"black"} boxSize={5} aria-hidden="true" />}
       variant="ghost"
       size="xs"
       _hover={{ bg: "primary.2" }}

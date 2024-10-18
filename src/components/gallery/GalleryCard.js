@@ -9,6 +9,7 @@ export default function GalleryCard({ children, ...rest }) {
       size={"sm"}
       mt={{ base: 10, md: 8 }}
       mb={10}
+      as={"figure"}
       {...rest}
     >
       {children}

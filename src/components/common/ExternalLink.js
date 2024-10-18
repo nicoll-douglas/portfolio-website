@@ -18,7 +18,7 @@ export default function ExternalLink({ children, href, ...rest }) {
       {...rest}
     >
       {children}
-      <ExternalLinkIcon ml={"3px"} boxSize={"18px"} />
+      <ExternalLinkIcon ml={"3px"} boxSize={"18px"} aria-hidden="true" />
     </Button>
   );
 }
