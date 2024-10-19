@@ -73,7 +73,7 @@ export default function Work() {
           projectName={"Lorem"}
           date="Jul 2024 - Oct 2024"
           description={
-            "A messaging board app where users can connect via user-created boards, threads and replies. All the while providing a clean, intuitive, responsive and accessible user experience. Built using decoupled architecture and meant for those who enjoy the forum-like style of internet communicaton pre-social-media."
+            "A messaging board app where users can create accounts, post threads to boards, and reply to others. All the while providing a clean, intuitive, responsive and accessible user experience. Built using decoupled architecture and meant for those who enjoy the forum-like style of internet communicaton pre-social-media."
           }
         >
           <ProjectLinks
