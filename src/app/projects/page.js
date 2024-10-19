@@ -52,8 +52,8 @@ export default function Work() {
           >
             &quot;Working with Nicoll was a seamless experience. He delivered an
             amazing website that exceeded our expectations and that truly
-            represents us. The attention to detail and timely delivery were
-            outstanding.&quot;{" "}
+            represents us. The attention to detail was outstanding. Love the
+            dark mode!&quot;{" "}
             <Box
               fontStyle={"normal"}
               mt={1}
