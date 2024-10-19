@@ -23,7 +23,7 @@ export default function Socials() {
           icon={<Icon as={FaLinkedin} h={6} w={6} color={"primary.5"} />}
           variant={"external"}
         >
-          @NicollDouglas
+          @nicoll-douglas
         </ButtonLink>
         <ButtonLink
           variant={"external"}

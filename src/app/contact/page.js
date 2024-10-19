@@ -24,7 +24,7 @@ export default function Contact() {
         <Box>
           <Text mb={2}>
             Need a London-based web developer? Feel free to reach out and send
-            me an email or connect with me elsewhere.
+            me an email or connect with me elsewhere!
           </Text>
           <EmailCopyBtn />
         </Box>

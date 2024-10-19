@@ -26,7 +26,7 @@ export default function Work() {
           projectName={"Meshara"}
           date={"Oct 2024"}
           description={
-            "A clean, modern and performant website built for a freelance client, focused on a smooth and state-of-the-art UI/UX. Actively honing my client-developer communication skills, I ensured consistent updates and collaborative feedback throughout the project in order to align with the client's vision."
+            "A clean, modern and performant website built for a freelance client, focused on a smooth and state-of-the-art UI/UX. I actively honed my client-developer communication skills, ensuring consistent updates and collaborative feedback throughout the project in order to align with the client's vision."
           }
         >
           <ProjectLinks
@@ -50,8 +50,8 @@ export default function Work() {
             mx={{ base: 0, md: 8 }}
           >
             &quot;Working with Nicoll was a seamless experience. He delivered an
-            amazing website that exceeded our expectations and truly represents
-            our startup. The attention to detail and timely delivery were
+            amazing website that exceeded our expectations and that truly
+            represents us. The attention to detail and timely delivery were
             outstanding.&quot;{" "}
             <Box
               fontStyle={"normal"}
