@@ -9,6 +9,7 @@ import {
 } from "@/components/project";
 import MesharaGallery from "@/components/MesharaGallery";
 import ExtraProject from "@/components/ExtraProject";
+import QueryScrollHandler from "@/components/QueryScrollHandler";
 
 export const metadata = {
   title: "Nicoll Douglas | Projects",
@@ -18,8 +19,15 @@ export const metadata = {
 export default function Work() {
   return (
     <PageTransition>
+      <QueryScrollHandler />
       <Flex maxW={{ base: "lg", md: "4xl" }} flexDir={"column"} mt={8}>
-        <Heading size={"4xl"} as={"h1"} maxW={"fit-content"} mb={"12"}>
+        <Heading
+          size={"4xl"}
+          as={"h1"}
+          maxW={"fit-content"}
+          mb={"12"}
+          id="pre-meshara-ref"
+        >
           Projects
         </Heading>
         <ProjectSection
@@ -66,9 +74,9 @@ export default function Work() {
             </Box>
           </Text>
           <MesharaGallery />
-          <TechList list={["NextJS", "RadixUI", "Figma"]} />
+          <TechList list={["NextJS", "Radix UI", "Figma"]} />
         </ProjectSection>
-        <ProjectDivider />
+        <ProjectDivider id="pre-lorem-ref" />
         <ProjectSection
           projectName={"Lorem"}
           date="Jul 2024 - Oct 2024"

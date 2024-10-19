@@ -34,7 +34,7 @@ export default function Header() {
     <Box
       position={"fixed"}
       top={0}
-      w={"100dvw"}
+      w={"100%"}
       left={0}
       as={"header"}
       pt={4}
