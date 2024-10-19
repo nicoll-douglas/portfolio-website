@@ -48,6 +48,7 @@ export default function Work() {
             fontWeight={"bold"}
             textAlign={"center"}
             mx={{ base: 0, md: 8 }}
+            as={"blockquote"}
           >
             &quot;Working with Nicoll was a seamless experience. He delivered an
             amazing website that exceeded our expectations and that truly
