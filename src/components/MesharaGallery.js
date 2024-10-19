@@ -10,7 +10,7 @@ import mesharaBlurUrl from "@/data/mesharaBlurUrl";
 export default function MesharaGallery() {
   return (
     <GalleryCard>
-      <GalleryCardHeader heading={"How It Looks"} />
+      <GalleryCardHeader heading={"Preview"} />
       <GalleryCardBody>
         <Fade in={true} transition={{ enter: { delay: 0.09 } }}>
           <GalleryImg
