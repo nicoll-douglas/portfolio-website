@@ -103,7 +103,7 @@ export default function Work() {
           <LoremGallery />
           <TechList
             list={[
-              "React (TanStack Query & Hooks)",
+              "React (Vite)",
               "MongoDB (Mongoose)",
               "NodeJS (Express)",
               "Firebase/Google Cloud",
