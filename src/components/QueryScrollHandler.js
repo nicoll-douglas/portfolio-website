@@ -8,7 +8,7 @@ export default function QueryScrollHandler() {
   const searchParams = useSearchParams();
   const projectId = searchParams.get("id");
 
-  function scrollTo(id, offset = 68) {
+  function scrollTo(id, offset = 60) {
     window.scrollTo({
       top:
         document.querySelector(id).getBoundingClientRect().top -
