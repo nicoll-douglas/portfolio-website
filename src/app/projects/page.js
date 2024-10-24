@@ -87,7 +87,7 @@ export default function Work() {
           <ProjectLinks
             links={[
               {
-                name: "Live Site",
+                name: "Live Site / Try Demo",
                 href: "https://nicoll-douglas.github.io/lorem-frontend/",
               },
               {
