@@ -39,10 +39,10 @@ export default function Work() {
         >
           <ProjectLinks
             links={[
-              // {
-              //   name: "Live Site",
-              //   href: "https://meshara.net",
-              // },
+              {
+                name: "Live Site",
+                href: "https://meshara.net",
+              },
               {
                 name: "Source",
                 href: "https://github.com/nicoll-douglas/meshara-website",
