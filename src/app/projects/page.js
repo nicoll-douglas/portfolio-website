@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import LoremGallery from "@/components/LoremGallery";
 import PageTransition from "@/components/common/PageTransition";
 import TechList from "@/components/common/TechList";
 import {
@@ -7,9 +6,11 @@ import {
   ProjectSection,
   ProjectLinks,
 } from "@/components/project";
-import MesharaGallery from "@/components/MesharaGallery";
-import ExtraProject from "@/components/ExtraProject";
-import QueryScrollHandler from "@/components/QueryScrollHandler";
+import ExtraProject from "./_components/ExtraProject";
+import QueryScrollHandler from "./_components/QueryScrollHandler";
+import LoremGallery from "./_components/LoremGallery";
+import MesharaGallery from "./_components/MesharaGallery";
+import TBPGallery from "./_components/TBPGallery";
 
 export const metadata = {
   title: "Nicoll Douglas | Projects",
@@ -26,10 +27,42 @@ export default function Work() {
           as={"h1"}
           maxW={"fit-content"}
           mb={"12"}
-          id="pre-meshara-ref"
+          id="pre-tbp-ref"
         >
           Projects
         </Heading>
+        <ProjectSection
+          projectName={"The Bridge Project"}
+          date="Nov 2024 - Present"
+          description={
+            "The Bridge Project is a web platform that aims at streamlining end-to-end project management for independent freelancers and clients by facilitating seamless communication, project briefing, task tracking, payment handling, onboarding and more."
+          }
+        >
+          <ProjectLinks
+            links={[
+              {
+                name: "Read more",
+                href: "https://github.com/nicoll-douglas/the-bridge-project/blob/main/project-plan.md",
+              },
+              {
+                name: "Ongoing progress",
+                href: "https://github.com/nicoll-douglas/the-bridge-project",
+              },
+            ]}
+          />
+          <TBPGallery />
+          <TechList
+            list={[
+              "React (Next.js)",
+              "Node.js (Nest.js)",
+              "MySQL",
+              "Stripe",
+              "Firebase/Google Cloud",
+              "Chakra UI",
+            ]}
+          />
+        </ProjectSection>
+        <ProjectDivider id="pre-meshara-ref" />
         <ProjectSection
           projectName={"Meshara"}
           date={"Oct 2024"}
@@ -74,7 +107,7 @@ export default function Work() {
             </Box>
           </Text>
           <MesharaGallery />
-          <TechList list={["NextJS", "Radix UI", "Figma"]} />
+          <TechList list={["React (Next.js)", "Radix UI", "Figma"]} />
         </ProjectSection>
         <ProjectDivider id="pre-lorem-ref" />
         <ProjectSection
@@ -105,7 +138,7 @@ export default function Work() {
             list={[
               "React (Vite)",
               "MongoDB (Mongoose)",
-              "NodeJS (Express)",
+              "Node.js (Express)",
               "Firebase/Google Cloud",
               "Chakra UI, Framer Motion",
               "Cypress (E2E Testing)",

@@ -8,12 +8,14 @@ export default function ProjectSection({
 }) {
   return (
     <Box as="section" aria-labelledby={projectName}>
-      <Flex alignItems={"end"} mb={1}>
+      <Flex alignItems={"end"} mb={2} gap={4}>
         <Heading size={"2xl"} id={projectName}>
           {projectName}
         </Heading>
         <Spacer />
-        <Text color={"primary.5"}>{date}</Text>
+        <Text color={"primary.5"} textAlign={"right"}>
+          {date}
+        </Text>
       </Flex>
       <Text>{description}</Text>
       {children}

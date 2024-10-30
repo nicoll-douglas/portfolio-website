@@ -1,8 +1,8 @@
 import { Heading, Text, Box } from "@chakra-ui/react";
 import SimpleSection from "@/components/common/SimpleSection";
-import EmailCopyBtn from "@/components/EmailCopyBtn";
+import EmailCopyBtn from "./_components/EmailCopyBtn";
 import PageTransition from "@/components/common/PageTransition";
-import Socials from "@/components/Socials";
+import Socials from "./_components/Socials";
 
 export const metadata = {
   title: "Nicoll Douglas | Contact",

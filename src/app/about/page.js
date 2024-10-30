@@ -1,7 +1,7 @@
 import { Heading, Text } from "@chakra-ui/react";
 import SimpleSection from "@/components/common/SimpleSection";
 import PageTransition from "@/components/common/PageTransition";
-import CoreSkills from "@/components/CoreSkills";
+import CoreSkills from "./_components/CoreSkills";
 
 export const metadata = {
   title: "Nicoll Douglas | About",
@@ -23,7 +23,7 @@ export default function About() {
         <Text>
           Born and raised in London, I&apos;ve become a passionate 21 year old
           developer with a strong foundation in both front-end and back-end
-          technologies. With expertise in JavaScript, React and NodeJS amongst
+          technologies. With expertise in JavaScript, React and Node.js amongst
           many others, I thrive on building dynamic, user-friendly web
           applications that deliver flawless experiences.
         </Text>
