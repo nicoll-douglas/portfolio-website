@@ -6,10 +6,15 @@ export default function ProjectSection({
   description,
   children,
 }) {
+  const id = projectName
+    .split(" ")
+    .map((v) => v.toLowerCase())
+    .join("-");
+
   return (
-    <Box as="section" aria-labelledby={projectName}>
+    <Box as="section" aria-labelledby={id}>
       <Flex alignItems={"end"} mb={2} gap={4}>
-        <Heading size={"2xl"} id={projectName}>
+        <Heading size={"2xl"} id={id}>
           {projectName}
         </Heading>
         <Spacer />
