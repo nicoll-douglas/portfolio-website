@@ -9,7 +9,7 @@ import {
   GalleryBtn,
   GalleryCardHeader,
   GalleryCardBody,
-} from "./gallery";
+} from "@/components/gallery";
 import useGallery from "@/hooks/useGallery";
 
 export default function LoremGallery() {

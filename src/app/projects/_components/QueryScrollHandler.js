@@ -24,7 +24,10 @@ export default function QueryScrollHandler() {
         scrollTo("#pre-lorem-ref");
         break;
       case "meshara":
-        scrollTo("#pre-meshara-ref", -9);
+        scrollTo("#pre-meshara-ref");
+        break;
+      case "the-bridge-project":
+        scrollTo("#pre-tbp-ref", -9);
     }
   }, []);
 

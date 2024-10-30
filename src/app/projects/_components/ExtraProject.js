@@ -1,5 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
-import ExternalLink from "./common/ExternalLink";
+import ExternalLink from "@/components/common/ExternalLink";
 
 export default function ExtraProject() {
   return (

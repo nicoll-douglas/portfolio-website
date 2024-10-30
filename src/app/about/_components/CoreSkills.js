@@ -1,6 +1,6 @@
 "use client";
 
-import StaticListItem from "./common/StaticListItem";
+import StaticListItem from "@/components/common/StaticListItem";
 import { Box, Heading, UnorderedList } from "@chakra-ui/react";
 import { SiJavascript, SiExpress, SiMongodb } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
@@ -21,7 +21,7 @@ export default function CoreSkills() {
       >
         <StaticListItem icon={SiJavascript}>JavaScript</StaticListItem>
         <StaticListItem icon={FaReact}>React</StaticListItem>
-        <StaticListItem icon={FaNodeJs}>NodeJS</StaticListItem>
+        <StaticListItem icon={FaNodeJs}>Node.js</StaticListItem>
         <StaticListItem icon={SiExpress}>ExpressJS</StaticListItem>
         <StaticListItem icon={SiMongodb}>MongoDB</StaticListItem>
       </UnorderedList>

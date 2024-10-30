@@ -4,7 +4,7 @@ import {
   GalleryCard,
   GalleryCardHeader,
   GalleryCardBody,
-} from "./gallery";
+} from "@/components/gallery";
 import mesharaBlurUrl from "@/data/mesharaBlurUrl";
 
 export default function MesharaGallery() {
