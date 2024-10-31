@@ -53,6 +53,7 @@ export default function Work() {
           <TBPGallery />
           <TechList
             list={[
+              "TypeScript",
               "React (Next.js)",
               "Node.js (Nest.js)",
               "MySQL",
