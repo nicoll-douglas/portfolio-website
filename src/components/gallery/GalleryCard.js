@@ -6,6 +6,7 @@ export default function GalleryCard({ children, ...rest }) {
       variant={"outline"}
       bg={"primary.3"}
       borderColor={"primary.5"}
+      overflow={"hidden"}
       size={"sm"}
       mt={{ base: 10, md: 8 }}
       mb={10}

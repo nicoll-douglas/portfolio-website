@@ -23,8 +23,8 @@ export default function Contact() {
         </Heading>
         <Box>
           <Text mb={2}>
-            Need a project-ready, London-based web developer? Feel free to reach
-            out and send me an email or connect with me elsewhere!
+            Need a London-based web developer? Feel free to reach out and send
+            me an email or connect with me elsewhere!
           </Text>
           <EmailCopyBtn />
         </Box>

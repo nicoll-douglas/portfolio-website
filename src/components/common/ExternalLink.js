@@ -15,10 +15,18 @@ export default function ExternalLink({ children, href, ...rest }) {
       fontSize={"xl"}
       color={"primary.5"}
       fontWeight={"normal"}
+      style={{ textWrap: "wrap" }}
+      display={"block"}
       {...rest}
     >
       {children}
-      <ExternalLinkIcon ml={"3px"} boxSize={"18px"} aria-hidden="true" />
+      <ExternalLinkIcon
+        display={"inline"}
+        mb={"3px"}
+        ml={"3px"}
+        boxSize={"18px"}
+        aria-hidden="true"
+      />
     </Button>
   );
 }
