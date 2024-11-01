@@ -35,8 +35,10 @@ export default function ProjectLinks({ links, ...rest }) {
     >
       {links.map(({ name, href }, index) => (
         <Fragment key={index}>
-          <ListItem>
-            <ExternalLink href={href}>{name}</ExternalLink>
+          <ListItem height={"30px"}>
+            <ExternalLink href={href} my="auto">
+              {name}
+            </ExternalLink>
           </ListItem>
           {index !== links.length - 1 && <Separator />}
         </Fragment>
