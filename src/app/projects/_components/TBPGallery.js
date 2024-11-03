@@ -5,7 +5,7 @@ import {
   GalleryCardBody,
 } from "@/components/gallery";
 import { Fade } from "@chakra-ui/react";
-import mesharaBlurUrl from "@/data/mesharaBlurUrl";
+import theBridgeProjectBlurUrl from "@/data/theBridgeProjectBlurUrl";
 
 export default function TBPGallery() {
   return (
@@ -16,7 +16,7 @@ export default function TBPGallery() {
           <GalleryImg
             src={"/projects/the-bridge-project/preview.png"}
             alt="Design Preview"
-            blurDataURL={mesharaBlurUrl}
+            blurDataURL={theBridgeProjectBlurUrl}
           />
         </Fade>
       </GalleryCardBody>
