@@ -10,7 +10,7 @@ import ExtraProject from "./_components/ExtraProject";
 import QueryScrollHandler from "./_components/QueryScrollHandler";
 import LoremGallery from "./_components/LoremGallery";
 import MesharaGallery from "./_components/MesharaGallery";
-import TBPGallery from "./_components/TBPGallery";
+// import TBPGallery from "./_components/TBPGallery";
 
 export const metadata = {
   title: "Nicoll Douglas | Projects",
@@ -31,7 +31,7 @@ export default function Work() {
         >
           Projects
         </Heading>
-        <ProjectSection
+        {/* <ProjectSection
           projectName={"The Bridge Project"}
           date="Nov 2024 - Present"
           description={
@@ -63,7 +63,7 @@ export default function Work() {
             ]}
           />
         </ProjectSection>
-        <ProjectDivider id="pre-meshara-ref" />
+        <ProjectDivider id="pre-meshara-ref" /> */}
         <ProjectSection
           projectName={"Meshara"}
           date={"Oct 2024"}
