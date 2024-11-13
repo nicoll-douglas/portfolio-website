@@ -4,7 +4,7 @@ import Avatar from "./Avatar";
 export default function SimpleSection({ avatar, children, ...rest }) {
   return (
     <Flex
-      gap={{ base: 4, lg: 8 }}
+      gap={{ base: 4, lg: 2 }}
       flexDir={{ base: "column-reverse", md: "row" }}
       maxW={{ base: "lg", md: "4xl" }}
       my={8}
