@@ -7,7 +7,7 @@ export default function PageTransition({ children }) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.7, delay: 0.3 }}
+      transition={{ duration: 0.4, delay: 0.2 }}
     >
       {children}
     </motion.div>

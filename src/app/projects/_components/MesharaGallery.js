@@ -12,13 +12,11 @@ export default function MesharaGallery() {
     <GalleryCard>
       <GalleryCardHeader heading={"Preview"} />
       <GalleryCardBody>
-        <Fade in={true} transition={{ enter: { delay: 0.09 } }}>
-          <GalleryImg
-            alt={"Meshara Homepage"}
-            src={"/projects/meshara/meshara-dark.gif"}
-            blurDataURL={mesharaBlurUrl}
-          />
-        </Fade>
+        <GalleryImg
+          alt={"Meshara Homepage"}
+          src={"/projects/meshara/meshara-dark.gif"}
+          blurDataURL={mesharaBlurUrl}
+        />
       </GalleryCardBody>
     </GalleryCard>
   );

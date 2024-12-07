@@ -31,39 +31,6 @@ export default function Work() {
         >
           Projects
         </Heading>
-        {/* <ProjectSection
-          projectName={"The Bridge Project"}
-          date="Nov 2024 - Present"
-          description={
-            "The Bridge Project is a web platform that aims at streamlining end-to-end project management for independent freelancers and clients by facilitating seamless communication, project briefing, task tracking, payment handling, onboarding and more."
-          }
-        >
-          <ProjectLinks
-            links={[
-              {
-                name: "Read more",
-                href: "https://github.com/nicoll-douglas/the-bridge-project/blob/main/project-plan.md",
-              },
-              {
-                name: "Ongoing progress",
-                href: "https://github.com/nicoll-douglas/the-bridge-project",
-              },
-            ]}
-          />
-          <TBPGallery />
-          <TechList
-            list={[
-              "TypeScript",
-              "React (Next.js)",
-              "Node.js (Nest.js)",
-              "MySQL",
-              "Stripe",
-              "Firebase/Google Cloud",
-              "Chakra UI",
-            ]}
-          />
-        </ProjectSection>
-        <ProjectDivider id="pre-meshara-ref" /> */}
         <ProjectSection
           projectName={"Meshara"}
           date={"Oct 2024"}
@@ -108,14 +75,14 @@ export default function Work() {
             </Box>
           </Text>
           <MesharaGallery />
-          <TechList list={["React (Next.js)", "Radix UI", "Figma"]} />
+          <TechList list={["React (Next.js)", "Radix UI"]} />
         </ProjectSection>
         <ProjectDivider id="pre-lorem-ref" />
         <ProjectSection
           projectName={"Lorem"}
           date="Jul 2024 - Oct 2024"
           description={
-            "A messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards. All the while providing a clean, intuitive, responsive and accessible user experience. Built using decoupled architecture and as a Single Page Application (SPA) on the frontend."
+            "A messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards. All the while providing a clean, intuitive, responsive and accessible user experience."
           }
         >
           <ProjectLinks
@@ -138,11 +105,11 @@ export default function Work() {
           <TechList
             list={[
               "React (Vite)",
-              "MongoDB (Mongoose)",
-              "Node.js (Express)",
-              "Firebase/Google Cloud",
-              "Chakra UI, Framer Motion",
-              "Cypress (E2E Testing)",
+              "MongoDB",
+              "Node.js + Express",
+              "Firebase",
+              "Chakra UI",
+              "Cypress",
             ]}
           />
         </ProjectSection>
