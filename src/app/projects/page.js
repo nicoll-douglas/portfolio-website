@@ -10,7 +10,7 @@ import ExtraProject from "./_components/ExtraProject";
 import QueryScrollHandler from "./_components/QueryScrollHandler";
 import LoremGallery from "./_components/LoremGallery";
 import MesharaGallery from "./_components/MesharaGallery";
-// import TBPGallery from "./_components/TBPGallery";
+import BitReadsGallery from "./_components/BitReadsGallery";
 
 export const metadata = {
   title: "Nicoll Douglas | Projects",
@@ -31,6 +31,32 @@ export default function Work() {
         >
           Projects
         </Heading>
+        <ProjectSection
+          projectName={"BitReads"}
+          date={"Nov 2024 - Present"}
+          description={
+            "A site for readers and book recommendations where users can discover, share and save books, as well as create and participate in digital book clubs in real time; all the while prioritising a seamless, engaging and eyecatching user experience."
+          }
+        >
+          <ProjectLinks
+            links={[
+              {
+                name: "Ongoing Progress",
+                href: "https://github.com/nicoll-douglas/BitReads",
+              },
+            ]}
+          />
+          <BitReadsGallery />
+          <TechList
+            list={[
+              "React (Next.js)",
+              "TypeScript",
+              "Prisma ORM",
+              "PostgreSQL (Neon)",
+            ]}
+          />
+        </ProjectSection>
+        <ProjectDivider />
         <ProjectSection
           projectName={"Meshara"}
           date={"Oct 2024"}
@@ -82,7 +108,7 @@ export default function Work() {
           projectName={"Lorem"}
           date="Jul 2024 - Oct 2024"
           description={
-            "A messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards. All the while providing a clean, intuitive, responsive and accessible user experience."
+            "A messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive and accessible user experience."
           }
         >
           <ProjectLinks
