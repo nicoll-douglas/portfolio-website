@@ -31,7 +31,7 @@ export default function Work() {
         >
           Projects
         </Heading>
-        <ProjectSection
+        {/* <ProjectSection
           projectName={"BitReads"}
           date={"Nov 2024 - Present"}
           description={
@@ -56,7 +56,7 @@ export default function Work() {
             ]}
           />
         </ProjectSection>
-        <ProjectDivider />
+        <ProjectDivider /> */}
         <ProjectSection
           projectName={"Meshara"}
           date={"Oct 2024"}
