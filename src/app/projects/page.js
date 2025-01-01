@@ -139,8 +139,8 @@ export default function Work() {
             ]}
           />
         </ProjectSection>
-        <ProjectDivider />
-        <ExtraProject />
+        {/* <ProjectDivider />
+        <ExtraProject /> */}
       </Flex>
     </PageTransition>
   );

@@ -15,7 +15,7 @@ export default function StaticListItem({ icon, children }) {
         w={6}
         h={6}
         as={icon}
-        mr={1}
+        mr={2}
         color={"primary.5"}
       />
       {children}
