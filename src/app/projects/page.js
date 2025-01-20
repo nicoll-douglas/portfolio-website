@@ -115,7 +115,7 @@ export default function Work() {
             links={[
               {
                 name: "Live Site / Try Demo",
-                href: "https://nicoll-douglas.github.io/lorem-frontend/",
+                href: "https://lorem.nicolldouglas.dev",
               },
               {
                 name: "Source (frontend)",
