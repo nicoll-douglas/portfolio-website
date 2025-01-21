@@ -2,6 +2,7 @@ import { Project, Gallery } from "@/components/atomic";
 import mesharaBlurUrl from "@/data/mesharaBlurUrl";
 import * as B from "@/components/badges";
 import mesharaImg from "../../../../public/projects/meshara/meshara-home.png";
+import mesharaWebp from "../../../../public/projects/meshara/meshara-dark.webp";
 
 export default function Meshara() {
   return (
@@ -29,8 +30,9 @@ export default function Meshara() {
         <Gallery.CardBody>
           <Gallery.Img
             alt={"Meshara Homepage"}
-            src={mesharaImg}
+            src={mesharaWebp}
             loading="lazy"
+            blurDataURL={mesharaBlurUrl}
           />
         </Gallery.CardBody>
       </Gallery.Card>
