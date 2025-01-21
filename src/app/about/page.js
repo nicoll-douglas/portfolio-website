@@ -1,7 +1,6 @@
 import { Heading, Text } from "@chakra-ui/react";
-import SimpleSection from "@/components/common/SimpleSection";
-import PageTransition from "@/components/common/PageTransition";
 import CoreSkills from "./_components/CoreSkills";
+import { SimpleSection, PageTransition } from "@/components/common";
 
 export const metadata = {
   title: "Nicoll Douglas | About",

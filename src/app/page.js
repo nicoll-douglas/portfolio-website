@@ -1,7 +1,5 @@
 import { Heading, Text } from "@chakra-ui/react";
-import SimpleSection from "@/components/common/SimpleSection";
-import ButtonLink from "@/components/common/ButtonLink";
-import PageTransition from "@/components/common/PageTransition";
+import { SimpleSection, ButtonLink, PageTransition } from "@/components/common";
 
 export const metadata = {
   title: "Nicoll Douglas | Full-Stack Web Developer",

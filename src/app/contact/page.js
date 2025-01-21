@@ -1,8 +1,8 @@
-import { Heading, Text, Box } from "@chakra-ui/react";
-import SimpleSection from "@/components/common/SimpleSection";
-import EmailCopyBtn from "./_components/EmailCopyBtn";
-import PageTransition from "@/components/common/PageTransition";
+import { Heading, Text, Box, Icon } from "@chakra-ui/react";
+// import EmailCopyBtn from "./_components/EmailCopyBtn";
 import Socials from "./_components/Socials";
+import { PageTransition, SimpleSection, ButtonLink } from "@/components/common";
+import EmailLink from "./_components/EmailLink";
 
 export const metadata = {
   title: "Nicoll Douglas | Contact",
@@ -26,7 +26,8 @@ export default function Contact() {
             Need a London-based web developer? Feel free to reach out and send
             me an email or connect with me elsewhere!
           </Text>
-          <EmailCopyBtn />
+          {/* <EmailCopyBtn /> */}
+          <EmailLink />
         </Box>
         <Socials />
       </SimpleSection>

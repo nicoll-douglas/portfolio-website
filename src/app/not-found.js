@@ -1,7 +1,5 @@
-import SimpleSection from "@/components/common/SimpleSection";
 import { Heading, Text } from "@chakra-ui/react";
-import ButtonLink from "@/components/common/ButtonLink";
-import PageTransition from "@/components/common/PageTransition";
+import { ButtonLink, PageTransition, SimpleSection } from "@/components/common";
 
 export const metadata = {
   title: "404 | Not Found",

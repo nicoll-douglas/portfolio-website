@@ -1,7 +1,7 @@
 import { Itim } from "next/font/google";
 import Contexts from "@/Contexts";
-import Header from "@/components/Header";
 import { Container, Center } from "@chakra-ui/react";
+import Header from "@/components/Header";
 
 const itim = Itim({ subsets: ["latin"], weight: "400" });
 
