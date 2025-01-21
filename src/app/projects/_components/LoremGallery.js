@@ -7,6 +7,7 @@ import { useGallery } from "@/hooks";
 import { Gallery } from "@/components/atomic";
 import loremBoard from "../../../../public/projects/lorem/lorem-board.png";
 // import loremDemo from "../../../../public/projects/lorem/lorem-demo.gif";
+import loremDemo from "../../../../public/projects/lorem/lorem-demo.webp";
 import loremHome from "../../../../public/projects/lorem/lorem-home.png";
 import loremInApp from "../../../../public/projects/lorem/lorem-in-app.png";
 import loremProfile from "../../../../public/projects/lorem/lorem-profile.png";
@@ -15,10 +16,10 @@ import loremThread from "../../../../public/projects/lorem/lorem-thread.png";
 export default function LoremGallery() {
   const images = useMemo(
     () => [
-      // {
-      //   label: "Demo",
-      //   src: loremDemo,
-      // },
+      {
+        label: "Demo",
+        src: loremDemo,
+      },
       {
         label: "/",
         src: loremHome,
@@ -58,7 +59,12 @@ export default function LoremGallery() {
           <Fragment key={index}>
             {index === currentIndex && (
               <Ch.Fade in={true} transition={{ enter: { delay: 0.09 } }}>
-                <Gallery.Img alt={label} src={src} loading="lazy" />
+                <Gallery.Img
+                  alt={label}
+                  src={src}
+                  blurDataURL={loremBlurUrl}
+                  loading="lazy"
+                />
               </Ch.Fade>
             )}
           </Fragment>
