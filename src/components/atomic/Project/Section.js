@@ -1,11 +1,6 @@
 import { Flex, Spacer, Heading, Text, Box } from "@chakra-ui/react";
 
-export default function ProjectSection({
-  projectName,
-  date,
-  description,
-  children,
-}) {
+export default function Section({ projectName, date, description, children }) {
   const id = projectName
     .split(" ")
     .map((v) => v.toLowerCase())

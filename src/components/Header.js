@@ -3,7 +3,7 @@
 import { Link, Box, Flex } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
-import useOnScroll from "@/hooks/useOnScroll";
+import { useOnScroll } from "@/hooks";
 
 function LinkTab({ href, children }) {
   const pathname = usePathname();
@@ -40,7 +40,7 @@ export default function Header() {
       pt={4}
       boxShadow={isScrolled ? "xl" : "none"}
       zIndex={"1000"}
-      style={{ transition: "box-shadow 1s ease" }}
+      style={{ transition: "box-shadow 750ms ease" }}
     >
       <Flex
         borderBottomColor={"primary.1"}

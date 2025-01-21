@@ -1,8 +1,8 @@
-import { Card } from "@chakra-ui/react";
+import { Card as ChakraCard } from "@chakra-ui/react";
 
-export default function GalleryCard({ children, ...rest }) {
+export default function Card({ children, ...rest }) {
   return (
-    <Card
+    <ChakraCard
       variant={"outline"}
       bg={"primary.3"}
       borderColor={"primary.5"}
@@ -14,6 +14,6 @@ export default function GalleryCard({ children, ...rest }) {
       {...rest}
     >
       {children}
-    </Card>
+    </ChakraCard>
   );
 }

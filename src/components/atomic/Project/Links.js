@@ -1,5 +1,5 @@
 import { ListItem, UnorderedList } from "@chakra-ui/react";
-import ExternalLink from "../common/ExternalLink";
+import ExternalLink from "@/components/common/ExternalLink";
 import { Fragment } from "react";
 
 function Separator() {
@@ -15,7 +15,7 @@ function Separator() {
   );
 }
 
-export default function ProjectLinks({ links, ...rest }) {
+export default function Links({ links, ...rest }) {
   return (
     <UnorderedList
       display={"flex"}

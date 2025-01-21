@@ -1,23 +1,17 @@
-import { Fade } from "@chakra-ui/react";
-import {
-  GalleryImg,
-  GalleryCard,
-  GalleryCardHeader,
-  GalleryCardBody,
-} from "@/components/gallery";
+import { Gallery } from "@/components/atomic";
 import mesharaBlurUrl from "@/data/mesharaBlurUrl";
 
 export default function MesharaGallery() {
   return (
-    <GalleryCard>
-      <GalleryCardHeader heading={"Preview"} />
-      <GalleryCardBody>
-        <GalleryImg
+    <Gallery.Card>
+      <Gallery.CardHeader heading={"Preview"} />
+      <Gallery.CardBody>
+        <Gallery.Img
           alt={"Meshara Homepage"}
           src={"/projects/meshara/meshara-dark.gif"}
           blurDataURL={mesharaBlurUrl}
         />
-      </GalleryCardBody>
-    </GalleryCard>
+      </Gallery.CardBody>
+    </Gallery.Card>
   );
 }

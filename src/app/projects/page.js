@@ -1,16 +1,10 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import PageTransition from "@/components/common/PageTransition";
 import TechList from "@/components/common/TechList";
-import {
-  ProjectDivider,
-  ProjectSection,
-  ProjectLinks,
-} from "@/components/project";
-import ExtraProject from "./_components/ExtraProject";
-import QueryScrollHandler from "./_components/QueryScrollHandler";
 import LoremGallery from "./_components/LoremGallery";
 import MesharaGallery from "./_components/MesharaGallery";
-import BitReadsGallery from "./_components/BitReadsGallery";
+import { Gallery, Project } from "@/components/atomic";
+import jwfBlurUrl from "@/data/jwfBlurUrl";
 
 export const metadata = {
   title: "Nicoll Douglas | Projects",
@@ -20,7 +14,6 @@ export const metadata = {
 export default function Work() {
   return (
     <PageTransition>
-      <QueryScrollHandler />
       <Flex maxW={{ base: "lg", md: "4xl" }} flexDir={"column"} mt={8}>
         <Heading
           size={"4xl"}
@@ -31,40 +24,46 @@ export default function Work() {
         >
           Projects
         </Heading>
-        {/* <ProjectSection
-          projectName={"BitReads"}
-          date={"Nov 2024 - Present"}
+        <Project.Section
+          projectName={"Jiggy's Web Fundamentals"}
+          date={"Jan 2025"}
           description={
-            "A site for readers and book recommendations where users can discover, share and save books, as well as create and participate in digital book clubs in real time; all the while prioritising a seamless, engaging and eyecatching user experience."
+            "A website where I regularly post informational tutorials about web development fundamentals. I personally had several users reach out and tell me how well the simplicity of the site, ease of navigation and informative tutorials provided them with a great user and learning experience."
           }
         >
-          <ProjectLinks
+          <Project.Links
             links={[
               {
-                name: "Ongoing Progress",
-                href: "https://github.com/nicoll-douglas/BitReads",
+                name: "Live Site",
+                href: "https://jwf.nicolldouglas.dev",
+              },
+              {
+                name: "Source",
+                href: "https://github.com/nicoll-douglas/jiggys-web-fundamentals",
               },
             ]}
           />
-          <BitReadsGallery />
-          <TechList
-            list={[
-              "React (Next.js)",
-              "TypeScript",
-              "Prisma ORM",
-              "PostgreSQL (Neon)",
-            ]}
-          />
-        </ProjectSection>
-        <ProjectDivider /> */}
-        <ProjectSection
+          <Gallery.Card>
+            <Gallery.CardHeader heading={"Preview"} />
+            <Gallery.CardBody>
+              <Gallery.Img
+                alt={"Jiggy's Web Fundamentals Homepage"}
+                src={"/projects/jwf/homepage.png"}
+                blurDataURL={jwfBlurUrl}
+              />
+            </Gallery.CardBody>
+          </Gallery.Card>
+          <TechList list={["HTML", "CSS", "JavaScript", "PHP", "MySQL"]} />
+        </Project.Section>
+        <Project.Divider />
+        <Project.Section
           projectName={"Meshara"}
           date={"Oct 2024"}
           description={
             "A clean, modern and performant website built for a freelance client, focused on a smooth and state-of-the-art UI/UX. I actively honed my client-developer communication skills, ensuring consistent updates and collaborative feedback throughout the project in order to align with the client's vision."
           }
         >
-          <ProjectLinks
+          <Project.Links
             links={[
               {
                 name: "Live Site",
@@ -102,16 +101,16 @@ export default function Work() {
           </Text>
           <MesharaGallery />
           <TechList list={["React (Next.js)", "Radix UI"]} />
-        </ProjectSection>
-        <ProjectDivider id="pre-lorem-ref" />
-        <ProjectSection
+        </Project.Section>
+        <Project.Divider id="pre-lorem-ref" />
+        <Project.Section
           projectName={"Lorem"}
           date="Jul 2024 - Oct 2024"
           description={
             "A messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive and accessible user experience."
           }
         >
-          <ProjectLinks
+          <Project.Links
             links={[
               {
                 name: "Live Site / Try Demo",
@@ -138,7 +137,7 @@ export default function Work() {
               "Cypress",
             ]}
           />
-        </ProjectSection>
+        </Project.Section>
         {/* <ProjectDivider />
         <ExtraProject /> */}
       </Flex>

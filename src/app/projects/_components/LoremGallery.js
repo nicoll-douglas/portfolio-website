@@ -1,16 +1,10 @@
 "use client";
 
-import { Fade, Flex, Spacer } from "@chakra-ui/react";
+import * as Ch from "@chakra-ui/react";
 import { Fragment, useMemo } from "react";
 import loremBlurUrl from "@/data/loremBlurUrl";
-import {
-  GalleryImg,
-  GalleryCard,
-  GalleryBtn,
-  GalleryCardHeader,
-  GalleryCardBody,
-} from "@/components/gallery";
-import useGallery from "@/hooks/useGallery";
+import { useGallery } from "@/hooks";
+import { Gallery } from "@/components/atomic";
 
 export default function LoremGallery() {
   const images = useMemo(
@@ -45,31 +39,31 @@ export default function LoremGallery() {
   const { handleLeft, handleRight, currentIndex } = useGallery(images.length);
 
   return (
-    <GalleryCard>
-      <GalleryCardHeader heading={images[currentIndex].label} display="flex">
-        <Spacer />
-        <Flex align={"center"} gap={1}>
-          <GalleryBtn type={"left"} onClick={handleLeft} />
-          <GalleryBtn type={"right"} onClick={handleRight} />
-        </Flex>
-      </GalleryCardHeader>
-      <GalleryCardBody>
+    <Gallery.Card>
+      <Gallery.CardHeader heading={images[currentIndex].label} display="flex">
+        <Ch.Spacer />
+        <Ch.Flex align={"center"} gap={1}>
+          <Gallery.Btn type={"left"} onClick={handleLeft} />
+          <Gallery.Btn type={"right"} onClick={handleRight} />
+        </Ch.Flex>
+      </Gallery.CardHeader>
+      <Gallery.CardBody>
         {images.map(({ filename, label }, index) => (
           <Fragment key={index}>
             {index === currentIndex && (
-              <Fade in={true} transition={{ enter: { delay: 0.09 } }}>
-                <GalleryImg
+              <Ch.Fade in={true} transition={{ enter: { delay: 0.09 } }}>
+                <Gallery.Img
                   alt={label}
                   src={`/projects/lorem/${filename}`}
                   blurDataURL={loremBlurUrl}
                   loading="lazy"
                   priority={false}
                 />
-              </Fade>
+              </Ch.Fade>
             )}
           </Fragment>
         ))}
-      </GalleryCardBody>
-    </GalleryCard>
+      </Gallery.CardBody>
+    </Gallery.Card>
   );
 }

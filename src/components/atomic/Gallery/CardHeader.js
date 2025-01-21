@@ -1,9 +1,13 @@
-import { CardHeader, Heading, Divider } from "@chakra-ui/react";
+import {
+  CardHeader as ChakraCardHeader,
+  Heading,
+  Divider,
+} from "@chakra-ui/react";
 
-export default function GalleryCardHeader({ heading, children, ...rest }) {
+export default function CardHeader({ heading, children, ...rest }) {
   return (
     <>
-      <CardHeader {...rest}>
+      <ChakraCardHeader {...rest}>
         <Heading
           size={"md"}
           color={"black"}
@@ -13,7 +17,7 @@ export default function GalleryCardHeader({ heading, children, ...rest }) {
           {heading}
         </Heading>
         {children}
-      </CardHeader>
+      </ChakraCardHeader>
       <Divider borderColor={"primary.5"} opacity={1} />
     </>
   );

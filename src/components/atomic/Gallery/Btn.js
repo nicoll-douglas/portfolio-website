@@ -3,7 +3,7 @@
 import { IconButton } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
-export default function GalleryBtn({ type, ...rest }) {
+export default function Btn({ type, ...rest }) {
   const Icon = type === "left" ? ChevronLeftIcon : ChevronRightIcon;
   const ariaLabel = type === "left" ? "Previous Image" : "Next Image";
 
