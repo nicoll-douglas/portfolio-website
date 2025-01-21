@@ -14,23 +14,23 @@ export default function LoremGallery() {
         filename: "lorem-demo.gif",
       },
       {
-        label: "Homepage",
+        label: "/",
         filename: "lorem-home.png",
       },
       {
-        label: "In App",
+        label: "/home",
         filename: "lorem-in-app.png",
       },
       {
-        label: "Board",
+        label: "/boards/*",
         filename: "lorem-board.png",
       },
       {
-        label: "Thread",
+        label: "/threads/*",
         filename: "lorem-thread.png",
       },
       {
-        label: "User Profile",
+        label: "/users/*",
         filename: "lorem-profile.png",
       },
     ],

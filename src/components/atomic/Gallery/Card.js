@@ -9,7 +9,7 @@ export default function Card({ children, ...rest }) {
       overflow={"hidden"}
       size={"sm"}
       mt={{ base: 10, md: 8 }}
-      mb={10}
+      mb={{ base: 10, md: 8 }}
       as={"figure"}
       {...rest}
     >
