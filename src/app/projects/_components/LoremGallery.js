@@ -5,33 +5,39 @@ import { Fragment, useMemo } from "react";
 import loremBlurUrl from "@/data/loremBlurUrl";
 import { useGallery } from "@/hooks";
 import { Gallery } from "@/components/atomic";
+import loremBoard from "../../../../public/projects/lorem/lorem-board.png";
+// import loremDemo from "../../../../public/projects/lorem/lorem-demo.gif";
+import loremHome from "../../../../public/projects/lorem/lorem-home.png";
+import loremInApp from "../../../../public/projects/lorem/lorem-in-app.png";
+import loremProfile from "../../../../public/projects/lorem/lorem-profile.png";
+import loremThread from "../../../../public/projects/lorem/lorem-thread.png";
 
 export default function LoremGallery() {
   const images = useMemo(
     () => [
-      {
-        label: "Demo",
-        filename: "lorem-demo.gif",
-      },
+      // {
+      //   label: "Demo",
+      //   src: loremDemo,
+      // },
       {
         label: "/",
-        filename: "lorem-home.png",
+        src: loremHome,
       },
       {
         label: "/home",
-        filename: "lorem-in-app.png",
+        src: loremInApp,
       },
       {
         label: "/boards/*",
-        filename: "lorem-board.png",
+        src: loremBoard,
       },
       {
         label: "/threads/*",
-        filename: "lorem-thread.png",
+        src: loremThread,
       },
       {
         label: "/users/*",
-        filename: "lorem-profile.png",
+        src: loremProfile,
       },
     ],
     []
@@ -48,17 +54,11 @@ export default function LoremGallery() {
         </Ch.Flex>
       </Gallery.CardHeader>
       <Gallery.CardBody>
-        {images.map(({ filename, label }, index) => (
+        {images.map(({ src, label }, index) => (
           <Fragment key={index}>
             {index === currentIndex && (
               <Ch.Fade in={true} transition={{ enter: { delay: 0.09 } }}>
-                <Gallery.Img
-                  alt={label}
-                  src={`/projects/lorem/${filename}`}
-                  blurDataURL={loremBlurUrl}
-                  loading="lazy"
-                  priority={false}
-                />
+                <Gallery.Img alt={label} src={src} loading="lazy" />
               </Ch.Fade>
             )}
           </Fragment>

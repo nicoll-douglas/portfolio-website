@@ -1,6 +1,7 @@
 import { Project, Gallery } from "@/components/atomic";
 import jwfBlurUrl from "@/data/jwfBlurUrl";
 import * as B from "@/components/badges";
+import jwfImage from "../../../../public/projects/jwf/homepage.png";
 
 export default function JWF() {
   return (
@@ -28,8 +29,9 @@ export default function JWF() {
         <Gallery.CardBody>
           <Gallery.Img
             alt={"Jiggy's Web Fundamentals Homepage"}
-            src={"/projects/jwf/homepage.png"}
+            src={jwfImage}
             blurDataURL={jwfBlurUrl}
+            priority={true}
           />
         </Gallery.CardBody>
       </Gallery.Card>
