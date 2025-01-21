@@ -8,7 +8,7 @@ export default function JWF() {
       projectName={"Jiggy's Web Fundamentals"}
       date={"Jan 2025"}
       description={
-        "A website where I regularly post informational tutorials about web development fundamentals. I personally had several users reach out and tell me how well the simplicity of the site, ease of navigation and informative tutorials provided them with a great user and learning experience."
+        "A website where I regularly post informational tutorials about web development fundamentals. I personally had a user reach out and tell me how well the simplicity of the site, ease of navigation and informative tutorials provided them with a great user and learning experience."
       }
     >
       <Project.Links
