@@ -13,7 +13,6 @@ export default function Links({ links, ...rest }) {
         flexWrap={"wrap"}
         listStylePosition={"outside"}
         listStyleType={"disc"}
-        aria-label="Project Links"
         {...rest}
       >
         {links.map(({ name, href }, index) => (
