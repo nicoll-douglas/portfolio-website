@@ -21,23 +21,23 @@ export default function LoremGallery() {
         src: loremDemo,
       },
       {
-        label: "/",
+        label: "Home Page",
         src: loremHome,
       },
       {
-        label: "/home",
+        label: "App View",
         src: loremInApp,
       },
       {
-        label: "/boards/*",
+        label: "Board View",
         src: loremBoard,
       },
       {
-        label: "/threads/*",
+        label: "Thread View",
         src: loremThread,
       },
       {
-        label: "/users/*",
+        label: "User View",
         src: loremProfile,
       },
     ],
