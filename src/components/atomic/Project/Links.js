@@ -4,7 +4,7 @@ import Subsection from "./Subsection";
 
 export default function Links({ links, ...rest }) {
   return (
-    <Subsection heading={"Links"} gap={1}>
+    <Subsection heading={"Links"} gap={"3px"}>
       <UnorderedList fontSize={"xl"} {...rest}>
         {links.map(({ name, href }, index) => (
           <ListItem height={"30px"} key={index}>

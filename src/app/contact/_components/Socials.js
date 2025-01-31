@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Socials() {
   return (
-    <Box mt={5}>
+    <Box mt={3}>
       <Heading size={"lg"} mb={3}>
         Connect
       </Heading>

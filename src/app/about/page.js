@@ -21,10 +21,10 @@ export default function About() {
         <Text>
           Born and raised in London, I&apos;ve become a passionate, self-taught
           developer with a strong foundation in both frontend and backend
-          technologies. With expertise in JavaScript, React and Node.js amongst
-          many others, I thrive on building dynamic, user-friendly web
-          applications that deliver flawless experiences—and can quickly pick up
-          any necessary technologies depending on the needs of a project.
+          technologies. With expertise in JavaScript, React and PHP amongst many
+          others, I thrive on building dynamic, user-friendly web applications
+          that deliver flawless experiences—and can quickly pick up any
+          necessary technologies depending on the needs of a project.
         </Text>
         <Text>
           My development philosophy combines a keen dedication to continuous

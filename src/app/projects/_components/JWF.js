@@ -7,9 +7,9 @@ export default function JWF() {
   return (
     <Project.Section
       projectName={"Jiggy's Web Fundamentals"}
-      date={"Jan 2025"}
+      date={"Jan 2025 - Feb 2025"}
       description={
-        "A website where I regularly post informational tutorials about web development fundamentals. I personally had a user reach out and tell me how well the simplicity of the site, ease of navigation and informative tutorials provided them with a great user and learning experience."
+        "An educational website where I regularly post tutorials on web development fundamentals. It features my own custom MVC implementation using PHP 8 which facilitates a robust and scalable backend throughout development and production."
       }
     >
       <Project.Links
