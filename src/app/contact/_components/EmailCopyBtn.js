@@ -17,7 +17,7 @@ import { useEffect } from "react";
 
 export default function EmailCopyBtn() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const email = "dev.nicoll.douglas@gmail.com";
+  const email = "me@nicolldouglas.dev";
 
   function handleCopyEmail() {
     if (!isOpen) {
