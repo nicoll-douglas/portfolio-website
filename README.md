@@ -1,10 +1,11 @@
 # Portfolio Website
 
-The repo for [my web dev portfolio](https://nicolldouglas.dev). The site that aggregates my best web dev work thus far.
+The repo for [my web dev portfolio](https://nicolldouglas.dev).
 
 ## Technologies
 
-- React / NextJS
+- React
+- Next.js
 - Chakra UI
 
 ## Screenshots
