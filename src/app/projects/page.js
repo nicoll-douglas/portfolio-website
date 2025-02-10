@@ -1,7 +1,7 @@
 import { Flex, Heading, Box } from "@chakra-ui/react";
 import PageTransition from "@/components/common/PageTransition";
 import { Project } from "@/components/atomic";
-import JWF from "./_components/JWF";
+import OneByOne from "./_components/OneByOne";
 import Meshara from "./_components/Meshara";
 
 export const metadata = {
@@ -16,7 +16,7 @@ export default function Work() {
         <Heading size={"4xl"} as={"h1"} maxW={"fit-content"} mb={8}>
           Projects
         </Heading>
-        <JWF />
+        <OneByOne />
         <Project.Divider />
         <Meshara />
       </Box>

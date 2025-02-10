@@ -1,12 +1,12 @@
 import { Project, Gallery } from "@/components/atomic";
-import jwfBlurUrl from "@/data/jwfBlurUrl";
+import oneByOneBlurUrl from "@/data/oneByOneBlurUrl";
 import * as B from "@/components/badges";
-import jwfImage from "../../../../public/projects/jwf/homepage.png";
+import oneByOneImage from "../../../../public/projects/oneByOne/homepage.png";
 
-export default function JWF() {
+export default function OneByOne() {
   return (
     <Project.Section
-      projectName={"Jiggy's Web Fundamentals"}
+      projectName={"1x1 Web Fundamentals"}
       date={"Jan 2025 - Feb 2025"}
       description={
         "An educational website where I regularly post tutorials on web development fundamentals. It features my own custom MVC implementation using PHP 8 which facilitates a robust and scalable backend throughout development and production."
@@ -16,11 +16,11 @@ export default function JWF() {
         links={[
           {
             name: "Live Site",
-            href: "https://jwf.nicolldouglas.dev",
+            href: "https://1x1.nicolldouglas.dev",
           },
           {
             name: "Source",
-            href: "https://github.com/nicoll-douglas/jiggys-web-fundamentals",
+            href: "https://github.com/nicoll-douglas/1x1-web-fundamentals",
           },
         ]}
       />
@@ -28,9 +28,9 @@ export default function JWF() {
         <Gallery.CardHeader heading={"Preview"} />
         <Gallery.CardBody>
           <Gallery.Img
-            alt={"Jiggy's Web Fundamentals Homepage"}
-            src={jwfImage}
-            blurDataURL={jwfBlurUrl}
+            alt={"1x1 Web Fundamentals Homepage"}
+            src={oneByOneImage}
+            blurDataURL={oneByOneBlurUrl}
             priority={true}
           />
         </Gallery.CardBody>
