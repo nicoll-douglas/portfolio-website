@@ -37,6 +37,7 @@ export default function Meshara() {
         </Gallery.CardBody>
       </Gallery.Card>
       <Project.TechStack>
+        <B.JavaScript />
         <B.React />
         <B.NextJs />
       </Project.TechStack>
