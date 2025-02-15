@@ -3,6 +3,7 @@ import PageTransition from "@/components/common/PageTransition";
 import { Project } from "@/components/atomic";
 import OneByOne from "./_components/OneByOne";
 import Meshara from "./_components/Meshara";
+import Boardly from "./_components/Boardly";
 
 export const metadata = {
   title: "Nicoll Douglas | Projects",
@@ -19,6 +20,8 @@ export default function Work() {
         <OneByOne />
         <Project.Divider />
         <Meshara />
+        <Project.Divider />
+        <Boardly />
       </Box>
     </PageTransition>
   );

@@ -10,3 +10,4 @@ export { default as NextJs } from "./NextJs";
 export { default as Express } from "./Express";
 export { default as MongoDB } from "./MongoDb";
 export { default as ChakraUi } from "./ChakraUi";
+export { default as Firebase } from "./Firebase";
