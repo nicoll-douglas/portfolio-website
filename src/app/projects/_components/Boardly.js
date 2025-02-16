@@ -15,7 +15,7 @@ export default function Boardly() {
       <Project.Links
         links={[
           {
-            name: "Live Site",
+            name: "Demo Site",
             href: "https://demo.boardly.nicolldouglas.dev",
           },
           {
