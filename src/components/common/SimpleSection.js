@@ -12,7 +12,7 @@ export default function SimpleSection({ avatar, children, ...rest }) {
     >
       <Flex
         flexDir={"column"}
-        gap={4}
+        gap={3}
         my={"auto"}
         alignItems={{ base: "center", md: "start" }}
         textAlign={{ base: "center", md: "left" }}

@@ -1,5 +1,4 @@
 import { Project, Gallery } from "@/components/atomic";
-import oneByOneBlurUrl from "@/data/oneByOneBlurUrl";
 import * as B from "@/components/badges";
 import oneByOneImage from "../../../../public/projects/oneByOne/homepage.png";
 
@@ -30,11 +29,17 @@ export default function OneByOne() {
           <Gallery.Img
             alt={"1x1 Web Fundamentals Homepage"}
             src={oneByOneImage}
-            blurDataURL={oneByOneBlurUrl}
             priority={true}
           />
         </Gallery.CardBody>
       </Gallery.Card>
+      <Project.Features
+        features={[
+          "OAuth integration supporting secure authentication.",
+          "An accessible, responsive, and SEO-friendly user interface.",
+          "Deployed on a VPS for full control and project scalability.",
+        ]}
+      />
       <Project.TechStack>
         <B.HTML />
         <B.CSS />

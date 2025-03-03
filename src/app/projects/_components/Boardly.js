@@ -9,7 +9,7 @@ export default function Boardly() {
       projectName={"Boardly"}
       date={"Jun 2024 - Sep 2024"}
       description={
-        "A demo messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive, and accessible user experience."
+        "A demo full-stack messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive, and accessible user experience."
       }
     >
       <Project.Links
@@ -40,6 +40,14 @@ export default function Boardly() {
           />
         </Gallery.CardBody>
       </Gallery.Card>
+      <Project.Features
+        features={[
+          "Secure user authentication supported by JSON web tokens.",
+          "A dynamic and responsive frontend driven by React and Chakra UI.",
+          "Robust data persistence and CRUD functionality supported by Node.js and MongoDB.",
+          "User-friendly profile customisation and secure account management.",
+        ]}
+      />
       <Project.TechStack>
         <B.JavaScript />
         <B.React />

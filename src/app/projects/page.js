@@ -14,12 +14,12 @@ export default function Work() {
   return (
     <PageTransition>
       <Box maxW={{ base: "lg", md: "4xl" }} mt={8}>
-        <Heading size={"4xl"} as={"h1"} maxW={"fit-content"} mb={8}>
+        <Heading size={"4xl"} as={"h1"} maxW={"fit-content"} mb={6}>
           Projects
         </Heading>
-        <OneByOne />
-        <Project.Divider />
         <Meshara />
+        <Project.Divider />
+        <OneByOne />
         <Project.Divider />
         <Boardly />
       </Box>

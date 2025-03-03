@@ -19,18 +19,17 @@ export default function About() {
           About
         </Heading>
         <Text>
-          Born and raised in London, I&apos;ve become a passionate, self-taught
-          developer with a strong foundation in both frontend and backend
-          technologies. With expertise in JavaScript, React and PHP amongst many
-          others, I thrive on building dynamic, user-friendly web applications
-          that deliver flawless experiences—and can quickly pick up any
-          necessary technologies depending on the needs of a project.
+          I am a passionate, self-taught developer with a strong foundation in
+          both frontend and backend technologies. With expertise in JavaScript,
+          React, and PHP amongst many others, I thrive on building dynamic,
+          user-friendly web applications that deliver flawless experiences—and
+          can quickly pick up any necessary technologies depending on the needs
+          of a project.
         </Text>
         <Text>
           My development philosophy combines a keen dedication to continuous
           learning and growth, with a committed attitude to innovative, and
-          robust problem-solving—enhanced by my previous backgrounds in fine art
-          and maths.
+          robust problem-solving, further enhanced by my self-taught background.
         </Text>
         <Box mt={3}>
           <Heading size={"lg"} mb={1}>
@@ -44,11 +43,11 @@ export default function About() {
             justifyContent={{ base: "center", md: "start" }}
             flexWrap={"wrap"}
           >
-            <ListItem>Self-learning</ListItem>
-            <ListItem>Adaptability</ListItem>
+            <ListItem>Self-driven</ListItem>
+            <ListItem>Adaptable</ListItem>
             <ListItem>Growth Mindset</ListItem>
             <ListItem>Forward-thinking</ListItem>
-            <ListItem>Attention to detail</ListItem>
+            <ListItem>Detail-oriented</ListItem>
           </UnorderedList>
         </Box>
       </SimpleSection>
