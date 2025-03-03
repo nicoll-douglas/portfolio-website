@@ -6,7 +6,7 @@ The repo for my web dev portfolio where I showcase my projects.
 
 ## Technologies
 
-Made with love using Next.js 🤎.
+Developed with precision using Next.js.
 
 ### Stack
 
