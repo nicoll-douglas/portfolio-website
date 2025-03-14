@@ -21,8 +21,8 @@ export default function About() {
         <Text>
           I&apos;m a passionate developer who&apos;s been self-teaching web
           development since late 2023. Acquiring expertise in JavaScript, React,
-          and PHP amongst many others, I&apos;ve become someone who thrives on
-          improving their coding skills as well as building dynamic,
+          and Node.js amongst many others, I&apos;ve become someone who thrives
+          on improving their coding skills as well as building dynamic,
           user-friendly software that can deliver flawless experiences.
         </Text>
         <Text>
