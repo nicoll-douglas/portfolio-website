@@ -19,17 +19,16 @@ export default function About() {
           About
         </Heading>
         <Text>
-          I am a passionate, self-taught developer with a strong foundation in
-          both frontend and backend technologies. With expertise in JavaScript,
-          React, and PHP amongst many others, I thrive on building dynamic,
-          user-friendly web applications that deliver flawless experiences—and
-          can quickly pick up any necessary technologies depending on the needs
-          of a project.
+          I&apos;m a passionate developer who&apos;s been self-teaching web
+          development since late 2023. Acquiring expertise in JavaScript, React,
+          and PHP amongst many others, I&apos;ve become someone who thrives on
+          improving their coding skills as well as building dynamic,
+          user-friendly software that can deliver flawless experiences.
         </Text>
         <Text>
           My development philosophy combines a keen dedication to continuous
           learning and growth, with a committed attitude to innovative, and
-          robust problem-solving, further enhanced by my self-taught background.
+          robust problem-solving.
         </Text>
         <Box mt={3}>
           <Heading size={"lg"} mb={1}>

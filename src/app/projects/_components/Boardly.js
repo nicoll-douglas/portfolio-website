@@ -42,7 +42,7 @@ export default function Boardly() {
       </Gallery.Card>
       <Project.Features
         features={[
-          "Secure user authentication supported by JSON web tokens.",
+          "Secure token-based user authentication.",
           "A dynamic and responsive frontend driven by React and Chakra UI.",
           "Robust data persistence and CRUD functionality supported by Node.js and MongoDB.",
           "User-friendly profile customisation and secure account management.",

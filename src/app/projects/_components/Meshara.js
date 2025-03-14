@@ -8,7 +8,7 @@ export default function Meshara() {
       projectName={"Meshara"}
       date={"Feb 2025 - Present"}
       description={
-        "A clean, modern, and performant website I am currently working on for Meshara, a startup focused on technological empowerment and connectivity. With the site I aim to hone my frontend skills and uphold a smooth, state-of-the-art, and inviting UI/UX that can further enhance the brand image of the business."
+        "A clean, modern, and performant website I am currently working on for and with Meshara, a startup focused on technological empowerment and connectivity. With the site we aim uphold a smooth, state-of-the-art, and inviting UI/UX that can further enhance the brand image of the business."
       }
     >
       <Gallery.Card>
@@ -22,9 +22,10 @@ export default function Meshara() {
         </Gallery.CardBody>
       </Gallery.Card>
       <Project.TechStack>
-        <B.JavaScript />
         <B.React />
         <B.NextJs />
+        <B.Node />
+        <B.MongoDB />
       </Project.TechStack>
     </Project.Section>
   );
