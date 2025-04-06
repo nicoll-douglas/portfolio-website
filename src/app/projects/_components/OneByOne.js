@@ -14,7 +14,7 @@ export default function OneByOne() {
       <Project.Links
         links={[
           {
-            name: "Live Site",
+            name: "Production Site",
             href: "https://1x1.nicolldouglas.dev",
           },
           {

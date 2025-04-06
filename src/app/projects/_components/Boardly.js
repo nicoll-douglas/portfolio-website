@@ -9,7 +9,7 @@ export default function Boardly() {
       projectName={"Boardly"}
       date={"Jun 2024 - Sep 2024"}
       description={
-        "A demo full-stack messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive, and accessible user experience."
+        "A full-stack messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive, and accessible user experience. This was one of the first major projects I worked on and it was very much a great learning experience for me."
       }
     >
       <Project.Links
