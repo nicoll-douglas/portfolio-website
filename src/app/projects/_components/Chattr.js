@@ -1,30 +1,26 @@
 import { Project, Gallery } from "@/components/atomic";
-import boardlyBlurUrl from "@/data/boardlyBlurUrl";
+import chattrBlurUrl from "@/data/chattrBlurUrl";
 import * as B from "@/components/badges";
-import demoGif from "../../../../public/projects/boardly/demo.gif";
+import demoGif from "../../../../public/projects/chattr/demo.gif";
 
-export default function Boardly() {
+export default function Chattr() {
   return (
     <Project.Section
-      projectName={"Boardly"}
+      projectName={"Chattr"}
       date={"Jun 2024 - Sep 2024"}
       description={
-        "A full-stack messaging board app where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive, and accessible user experience. This was one of the first major projects I worked on and it was very much a great learning experience for me."
+        "A full-stack messaging board app/prototype where users can create accounts, customise profiles, and interact via threads on different topic-based messaging boards; all the while providing a clean, intuitive, responsive, and accessible user experience. This was one of the first major projects I worked on and it was very much a great learning experience for me."
       }
     >
       <Project.Links
         links={[
           {
-            name: "Demo Site",
-            href: "https://demo.boardly.nicolldouglas.dev",
+            name: "Live Demo",
+            href: "https://chattr.nicolldouglas.dev",
           },
           {
-            name: "Source (frontend)",
-            href: "https://github.com/nicoll-douglas/boardly-frontend",
-          },
-          {
-            name: "Source (backend)",
-            href: "https://github.com/nicoll-douglas/boardly-backend",
+            name: "Source",
+            href: "https://github.com/nicoll-douglas/chattr",
           },
         ]}
       />
@@ -32,10 +28,10 @@ export default function Boardly() {
         <Gallery.CardHeader heading={"Demo"} />
         <Gallery.CardBody>
           <Gallery.Img
-            alt={"Boardly Demo"}
+            alt={"Chattr Demo"}
             src={demoGif}
             loading="lazy"
-            blurDataURL={boardlyBlurUrl}
+            blurDataURL={chattrBlurUrl}
             unoptimized
           />
         </Gallery.CardBody>
@@ -55,7 +51,6 @@ export default function Boardly() {
         <B.Node />
         <B.Express />
         <B.MongoDB />
-        <B.Firebase />
       </Project.TechStack>
     </Project.Section>
   );
