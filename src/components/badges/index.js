@@ -11,3 +11,4 @@ export { default as Express } from "./Express";
 export { default as MongoDB } from "./MongoDb";
 export { default as ChakraUi } from "./ChakraUi";
 export { default as Firebase } from "./Firebase";
+export { default as Docker } from "./Docker";

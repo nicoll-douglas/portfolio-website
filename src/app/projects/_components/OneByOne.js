@@ -37,7 +37,7 @@ export default function OneByOne() {
         features={[
           "OAuth integration for secure authentication.",
           "An accessible, responsive, and user-friendly user interface.",
-          "Deployment on a VPS for full developer control and project scalability.",
+          "CRUD functionality to manage tutorial progress.",
         ]}
       />
       <Project.TechStack>
