@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: ${APP_CONTAINER_NAME}
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - .:/app
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    env_file:
+      - .env.development

@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: ${APP_CONTAINER_NAME}
+    image: ${DOCKERHUB_IMAGE}
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    env_file:
+      - .env.production
