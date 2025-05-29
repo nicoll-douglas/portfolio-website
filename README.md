@@ -1,14 +1,10 @@
 # Portfolio Website
 
-The repo for my web dev portfolio where I showcase my projects.
+The repo for my developer portfolio where I showcase my projects.
 
 [![Link](https://img.shields.io/badge/Live_At-https://nicolldouglas.dev-FFC998)](https://nicolldouglas.dev)
 
 ## Technologies
-
-Carefully crafted with Next.js 🤙.
-
-### Stack
 
 [![Stack](https://skillicons.dev/icons?i=js,react,nextjs)](https://skillicons.dev)
 
