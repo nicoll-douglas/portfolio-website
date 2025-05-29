@@ -8,7 +8,7 @@ export default function Meshara() {
       projectName={"Meshara"}
       date={"Jan 2025 - Present"}
       description={
-        "A clean, modern, and performant website I am currently working on for and with Meshara. With the site we aim to uphold a smooth, state-of-the-art, and inviting UI/UX that can further enhance the brand image of the business. It's also been a rewarding challenge for me to work on a real world project and get familiar with things like Docker and CI/CD."
+        "A clean, modern, and performant website I am currently working on for a startup called Meshara."
       }
     >
       <Project.Links

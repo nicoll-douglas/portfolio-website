@@ -8,7 +8,7 @@ export default function OneByOne() {
       projectName={"1x1 Web Fundamentals"}
       date={"Jan 2025 - Feb 2025"}
       description={
-        "A simple and cleanly architected educational website where I regularly post tutorials on web development fundamentals. It features my own custom MVC implementation using PHP 8 which facilitates a robust and scalable backend throughout development and production, as well as serving as an example to users and learners."
+        "A simple and cleanly architected educational website where I regularly post tutorials on web development fundamentals."
       }
     >
       <Project.Links
@@ -33,13 +33,6 @@ export default function OneByOne() {
           />
         </Gallery.CardBody>
       </Gallery.Card>
-      <Project.Features
-        features={[
-          "OAuth integration for secure authentication.",
-          "An accessible, responsive, and user-friendly user interface.",
-          "CRUD functionality to manage tutorial progress.",
-        ]}
-      />
       <Project.TechStack>
         <B.HTML />
         <B.CSS />
