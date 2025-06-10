@@ -7,21 +7,23 @@
             echo $title . " | ";
           }
           ?>Nicoll Douglas</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=block" rel="stylesheet">
+
   <link rel="stylesheet" href="/assets/css/global.css">
-  <?php if (isset($css)): ?>
-    <link rel="stylesheet" href="<?= $css ?>">
-  <?php endif; ?>
+  <link rel="stylesheet" href="/assets/css/about.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="shortcut icon" href="/assets/images/icon.png" type="image/png">
   <script src="/assets/js/global.js" type="module" defer></script>
+
   <meta name="author" content="Nicoll Douglas">
   <?php if (isset($description)): ?>
     <meta name="description" content="<?= $description ?>">
   <?php endif; ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/icon.png" type="image/png">
 </head>
 
 <body>
@@ -43,5 +45,8 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main id="<?php
+            $id = substr($_SERVER["REQUEST_URI"], 1);
+            echo empty($id) ? "home" : $id;
+            ?>">
     <div>

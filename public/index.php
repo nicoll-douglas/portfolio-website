@@ -14,7 +14,6 @@ $notFound = __DIR__ . "/../src/content/notFound.php";
 
 switch ($_SERVER["REQUEST_URI"]) {
   case "/":
-    $css = "/assets/css/home.css";
     require $head;
     require $home;
     require $tail;
