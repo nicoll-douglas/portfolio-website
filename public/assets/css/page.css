@@ -1,7 +1,8 @@
 #about,
 #home,
 #contact,
-#not-found {
+#not-found,
+#error {
   display: flex;
   align-items: center;
   justify-content: center;

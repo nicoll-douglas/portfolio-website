@@ -108,3 +108,10 @@ header a:hover,
 ::selection {
   background-color: var(--brown-4);
 }
+
+:focus-visible {
+  outline: 2px dashed var(--brown-5);
+  outline-offset: 2px;
+  position: relative;
+  z-index: 100;
+}

@@ -7,15 +7,15 @@ const pages = {
     title: "Nicoll Douglas",
     id: "home",
   },
-  "/about": {
-    ssr: "/ssr/about",
-    title: "About | Nicoll Douglas",
-    id: "about",
-  },
   "/projects": {
     ssr: "/ssr/projects",
     title: "Projects | Nicoll Douglas",
     id: "projects",
+  },
+  "/about": {
+    ssr: "/ssr/about",
+    title: "About | Nicoll Douglas",
+    id: "about",
   },
   "/contact": {
     ssr: "/ssr/contact",
@@ -27,7 +27,7 @@ const pages = {
 /**
  * Resolve a page from the pages object or falls back to "not found".
  * @param {string} key The key of the page.
- * @returns
+ * @returns {{ssr: string; title: string; id: string;}} The page.
  */
 function getPage(key) {
   if (pages.hasOwnProperty(key)) {
@@ -41,4 +41,29 @@ function getPage(key) {
   };
 }
 
-export default getPage;
+function orderOfNavigatedPage(nextKey) {
+  const pathname = window.location.pathname;
+  const currentKey = pages.hasOwnProperty(pathname) ? pathname : "not-found";
+
+  if (currentKey === "not-found") return 1;
+  if (currentKey === nextKey) return 0;
+
+  const pageKeys = Object.keys(pages);
+  for (let i = 0; i < pageKeys.length; i++) {
+    const pageKey = pageKeys[i];
+
+    // navigated page key is ahead
+    if (pageKey === currentKey) {
+      return 1;
+    }
+
+    // navigated page key is behind
+    if (pageKey === nextKey) {
+      return -1;
+    }
+  }
+
+  return null;
+}
+
+export { getPage, orderOfNavigatedPage };
