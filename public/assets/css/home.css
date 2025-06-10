@@ -2,40 +2,6 @@
   font-size: 5rem;
 }
 
-#cta {
-  font-size: 20px;
-  padding: 0.6rem 1.5rem;
-  border-radius: 6px;
-  border: 1px solid var(--brown-5);
-  display: flex;
-  max-width: fit-content;
-  color: var(--brown-5);
-  text-decoration: none;
-  font-weight: bold;
-  transition-property: background-color;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 1rem;
-}
-
-#cta svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--brown-5);
-  margin-top: 2px;
-}
-
-#cta:hover {
-  background-color: var(--brown-2);
-}
-
-#cta:active {
-  background-color: var(--brown-4);
-}
-
 #skills,
 #socials {
   display: flex;

@@ -14,6 +14,8 @@ $notFound = __DIR__ . "/../src/content/notFound.php";
 
 switch ($_SERVER["REQUEST_URI"]) {
   case "/":
+    $title = "Nicoll Douglas";
+    $template = false;
     require $head;
     require $home;
     require $tail;
@@ -48,6 +50,14 @@ switch ($_SERVER["REQUEST_URI"]) {
   case "/ssr/contact":
     echo buffer($contact);
     break;
-  default:
+  case "/ssr/not-found":
     echo buffer($notFound);
+    break;
+  default:
+    http_response_code(404);
+    $title = "404 Not Found";
+    $template = false;
+    require $head;
+    require $notFound;
+    require $tail;
 }

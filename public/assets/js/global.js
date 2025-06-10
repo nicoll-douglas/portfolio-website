@@ -21,6 +21,11 @@ const keys = {
     title: "Contact | Nicoll Douglas",
     id: "contact",
   },
+  "/not-found": {
+    ssr: "/ssr/not-found",
+    title: "404 Not Found",
+    id: "not-found",
+  },
 };
 
 function handleNavigation(e) {
@@ -55,18 +60,23 @@ function updateHeaderNavigation() {
 }
 
 function updateTitle() {
-  document.title = keys[window.location.pathname].title;
+  document.title = page(window.location.pathname).title;
+}
+
+function page(key) {
+  return keys[keys.hasOwnProperty(key) ? key : "/not-found"];
 }
 
 async function ssr(key) {
+  const pageObj = page(key);
   updateTitle();
   main.firstElementChild.remove();
 
-  main.id = keys[key].id;
+  main.id = pageObj.id;
   main.appendChild(document.createElement("div"));
 
   try {
-    const response = await fetch(keys[key].ssr);
+    const response = await fetch(pageObj.ssr);
     const html = await response.text();
     main.firstElementChild.innerHTML = html;
   } catch (e) {

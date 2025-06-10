@@ -4,9 +4,15 @@
 <head>
   <title><?php
           if (!empty($title)) {
-            echo $title . " | ";
+            echo $title;
           }
-          ?>Nicoll Douglas</title>
+          if (!isset($template)) {
+            $template = true;
+          }
+          if (!empty($template)) {
+            echo " | Nicoll Douglas";
+          }
+          ?></title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,8 +52,15 @@
       </ul>
     </nav>
   </header>
-  <main id="<?php
-            $id = substr($_SERVER["REQUEST_URI"], 1);
-            echo empty($id) ? "home" : $id;
+  <?php
+
+  ?>
+  <main id="<?= match ($_SERVER["REQUEST_URI"]) {
+              "/" => "home",
+              "/about" => "about",
+              "/contact" => "contact",
+              "/projects" => "projects",
+              default => "not-found"
+            }
             ?>">
     <div>
