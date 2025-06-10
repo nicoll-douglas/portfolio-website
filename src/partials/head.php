@@ -22,12 +22,10 @@
   <link rel="stylesheet" href="/assets/css/page.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="shortcut icon" href="/assets/images/icon.png" type="image/png">
-  <script src="/assets/js/global.js" type="module" defer></script>
+  <script src="/assets/js/main.js" type="module" defer></script>
 
   <meta name="author" content="Nicoll Douglas">
-  <?php if (isset($description)): ?>
-    <meta name="description" content="<?= $description ?>">
-  <?php endif; ?>
+  <meta name="description" content="<?= $description ?>">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>

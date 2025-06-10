@@ -6,6 +6,10 @@
   margin: 1rem 0 0;
 }
 
+#email-link {
+  margin-top: 1rem;
+}
+
 .simple-split {
   display: flex;
   align-items: center;
