@@ -19,9 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=block" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/about.css">
-  <link rel="stylesheet" href="/assets/css/home.css">
-  <link rel="stylesheet" href="/assets/css/contact.css">
+  <link rel="stylesheet" href="/assets/css/page.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="shortcut icon" href="/assets/images/icon.png" type="image/png">
   <script src="/assets/js/global.js" type="module" defer></script>
 

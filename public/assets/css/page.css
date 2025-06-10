@@ -1,0 +1,25 @@
+#about,
+#home,
+#contact,
+#not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about h2 {
+  margin-top: 1rem;
+}
+
+#contact h2 {
+  margin-top: 1.25rem;
+}
+
+#email-link {
+  margin-top: 1rem;
+}
+
+#home h1 {
+  font-size: 5rem;
+}
