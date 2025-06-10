@@ -8,23 +8,23 @@
     </div>
     <h2>Skills</h2>
     <ul id="skills">
-      <li class="technology">
+      <li class="icon-badge">
         <?php require __DIR__ . "/../partials/icons/js.php" ?>
         JavaScript
       </li>
-      <li class="technology">
+      <li class="icon-badge">
         <?php require __DIR__ . "/../partials/icons/react.php" ?>
         React
       </li>
-      <li class="technology">
+      <li class="icon-badge">
         <?php require __DIR__ . "/../partials/icons/docker.php" ?>
         Docker
       </li>
-      <li class="technology">
+      <li class="icon-badge">
         <?php require __DIR__ . "/../partials/icons/git.php" ?>
         Git
       </li>
-      <li class="technology">
+      <li class="icon-badge">
         <?php require __DIR__ . "/../partials/icons/linux.php" ?>
         Linux
       </li>
