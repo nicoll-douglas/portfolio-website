@@ -1,17 +1,26 @@
 const main = document.querySelector("main");
 
-const ssrKeys = {
-  "/": "/ssr/home",
-  "/about": "/ssr/about",
-  "/projects": "/ssr/projects",
-  "/contact": "/ssr/contact",
-};
-
-const titleKeys = {
-  "/": "Nicoll Douglas",
-  "/about": "About | Nicoll Douglas",
-  "/projects": "Projects | Nicoll Douglas",
-  "/contact": "Contact | Nicoll Douglas",
+const keys = {
+  "/": {
+    ssr: "/ssr/home",
+    title: "Nicoll Douglas",
+    id: "home",
+  },
+  "/about": {
+    ssr: "/ssr/about",
+    title: "About | Nicoll Douglas",
+    id: "about",
+  },
+  "/projects": {
+    ssr: "/ssr/projects",
+    title: "Projects | Nicoll Douglas",
+    id: "projects",
+  },
+  "/contact": {
+    ssr: "/ssr/contact",
+    title: "Contact | Nicoll Douglas",
+    id: "contact",
+  },
 };
 
 function handleNavigation(e) {
@@ -27,7 +36,7 @@ function handleNavigation(e) {
   }
 
   window.history.pushState(null, null, e.target.pathname);
-  ssr(ssrKeys[e.target.pathname]);
+  ssr(e.target.pathname);
 }
 
 function registerNavigation(root = document) {
@@ -46,16 +55,18 @@ function updateHeaderNavigation() {
 }
 
 function updateTitle() {
-  document.title = titleKeys[window.location.pathname];
+  document.title = keys[window.location.pathname].title;
 }
 
-async function ssr(target) {
+async function ssr(key) {
   updateTitle();
   main.firstElementChild.remove();
+
+  main.id = keys[key].id;
   main.appendChild(document.createElement("div"));
 
   try {
-    const response = await fetch(target);
+    const response = await fetch(keys[key].ssr);
     const html = await response.text();
     main.firstElementChild.innerHTML = html;
   } catch (e) {
@@ -67,7 +78,7 @@ async function ssr(target) {
 }
 
 window.addEventListener("popstate", (e) => {
-  ssr(ssrKeys[window.location.pathname]);
+  ssr(window.location.pathname);
 });
 
 window.addEventListener("scroll", (e) => {
