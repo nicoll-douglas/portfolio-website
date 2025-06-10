@@ -35,6 +35,23 @@
 .link {
   color: var(--brown-5);
   text-decoration: none;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.link:active {
+  color: var(--brown-6);
+}
+
+.link.icon-badge:active svg {
+  fill: var(--brown-6);
+}
+
+.link.icon-badge svg {
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: fill;
 }
 
 .cta-link {
@@ -47,7 +64,7 @@
   color: var(--brown-5);
   text-decoration: none;
   font-weight: bold;
-  transition-property: background-color;
+  transition-property: background-color, border-color, color;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   align-items: center;
@@ -61,6 +78,9 @@
   height: 20px;
   fill: var(--brown-5);
   margin-top: 2px;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .cta-link:hover {
@@ -69,6 +89,12 @@
 
 .cta-link:active {
   background-color: var(--brown-4);
+  border-color: var(--brown-6);
+  color: var(--brown-6);
+}
+
+.cta-link:active svg {
+  fill: var(--brown-6);
 }
 
 .nav-active {
