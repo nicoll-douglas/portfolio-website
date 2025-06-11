@@ -49,8 +49,5 @@
       </ul>
     </nav>
   </header>
-  <?php
-
-  ?>
   <main>
     <div>
