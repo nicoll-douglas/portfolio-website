@@ -96,13 +96,3 @@
 .cta-link:active svg {
   fill: var(--brown-6);
 }
-
-.nav-active {
-  border-color: var(--brown-5);
-  color: var(--brown-5);
-}
-
-.header-scroll {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}

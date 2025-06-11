@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/assets/css/global.css">
   <link rel="stylesheet" href="/assets/css/page.css">
   <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
   <link rel="shortcut icon" href="/assets/images/icon.png" type="image/png">
   <script src="/assets/js/main.js" type="module" defer></script>
 
