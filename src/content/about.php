@@ -7,23 +7,23 @@
     <h2 class="top-4">Skills</h2>
     <ul class="icon-badges">
       <li class="icon-badge">
-        <?php require __DIR__ . "/../partials/icons/js.php" ?>
+        <?php require alias("@icon/js.php") ?>
         JavaScript
       </li>
       <li class="icon-badge">
-        <?php require __DIR__ . "/../partials/icons/react.php" ?>
+        <?php require alias("@icon/react.php") ?>
         React
       </li>
       <li class="icon-badge">
-        <?php require __DIR__ . "/../partials/icons/docker.php" ?>
+        <?php require alias("@icon/docker.php") ?>
         Docker
       </li>
       <li class="icon-badge">
-        <?php require __DIR__ . "/../partials/icons/git.php" ?>
+        <?php require alias("@icon/git.php") ?>
         Git
       </li>
       <li class="icon-badge">
-        <?php require __DIR__ . "/../partials/icons/linux.php" ?>
+        <?php require alias("@icon/linux.php") ?>
         Linux
       </li>
     </ul>

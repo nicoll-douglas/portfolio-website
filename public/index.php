@@ -1,16 +1,19 @@
 <?php
-require_once __DIR__ . "/../src/utils/buffer.php";
-require_once __DIR__ . "/../src/utils/cache.php";
 
-$head =  __DIR__ . "/../src/partials/head.php";
-$tail =  __DIR__ . "/../src/partials/tail.php";
-$home = __DIR__ . "/../src/content/home.php";
-$projects = __DIR__ . "/../src/content/projects.php";
-$about = __DIR__ . "/../src/content/about.php";
-$contact = __DIR__ . "/../src/content/contact.php";
-$notFound = __DIR__ . "/../src/content/notFound.php";
+require_once __DIR__ . "/../src/bootstrap.php";
 
-// cache(43200);
+require_once alias("@utils/buffer.php");
+require_once alias("@utils/cache.php");
+
+$head =  alias("@head");
+$tail = alias("@tail");
+$home = alias("@content/home.php");
+$projects = alias("@content/projects.php");
+$about = alias("@content/about.php");
+$contact =  alias("@content/contact.php");
+$notFound = alias("@content/notFound.php");
+
+// cache(3600);
 
 switch ($_SERVER["REQUEST_URI"]) {
   case "/":
