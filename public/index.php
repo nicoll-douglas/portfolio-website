@@ -26,6 +26,7 @@ switch ($_SERVER["REQUEST_URI"]) {
     require $tail;
     break;
   case "/projects":
+    $description = "Explore Nicoll's portfolio of web development and DevOps projects, featuring full-stack applications and scalable digital solution.";
     $title = "Projects";
     require $head;
     require $projects;
@@ -33,13 +34,14 @@ switch ($_SERVER["REQUEST_URI"]) {
     break;
   case "/about":
     $title = "About";
-    $description = "Learn more about Nicoll, a web developer with a strong background in PHP, React, and DevOps practices focused on building reliable, high-performance web applications.";
+    $description = "Nicoll Douglas is web developer with a background in PHP, React, and DevOps practices focused on building reliable, high-performance web applications.";
     require $head;
     require $about;
     require $tail;
     break;
   case "/contact":
     $title = "Contact";
+    $description = "Contact Nicoll for web development and DevOps collaboration opportunities.";
     require $head;
     require $contact;
     require $tail;
