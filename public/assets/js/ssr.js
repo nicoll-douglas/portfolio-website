@@ -18,7 +18,9 @@ async function ssr(key) {
   main.appendChild(document.createElement("div"));
 
   try {
-    const response = await fetch(ssr);
+    const response = await fetch(ssr, {
+      cache: "default",
+    });
     const html = await response.text();
     if (!response.ok) {
       throw new Error("SSR request failed.");
