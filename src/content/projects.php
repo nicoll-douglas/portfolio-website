@@ -8,24 +8,13 @@
   require alias("@partials/projectHeaders.php");
   ?>
 
-  <div style="display: flex; gap: 1rem">
+  <div class="project-split">
     <div>
       <p class="top-0">
-        I maintain a personal homelab where I self-host several services including my own websites and a Gitea instance for version control. This setup has been the main way for me to deepen my skills in:
+        I maintain a personal homelab where I self-host several services including my own websites and a Gitea instance for version control. This setup has been the main way for me to deepen my skills in DevOps, SysAdmin, and networking.
       </p>
-      <ul class="list">
-        <li>
-          DevOps & CI/CD: Custom pipelines for automated builds and deployments
-        </li>
-        <li>
-          System Administration: Linux server management, service orchestration, and monitoring
-        </li>
-        <li>
-          Networking & Security: DNS, port forwarding, firewalls, and secure remote access
-        </li>
-      </ul>
       <p>
-        This project actively gives me hands-on experience managing real infrastructure, and it's been a reliable platform for testing and deploying personal and freelance projects.
+        This project actively gives me hands-on experience managing real infrastructure, and it's been a reliable platform for testing and deploying personal projects.
       </p>
       <?php
       $projectLinks = [
@@ -34,19 +23,23 @@
       ];
       require alias("@partials/projectLinks.php");
       ?>
-      <?php
-      $techStack = [
-        ["Debian", "debian"],
-        ["Nginx", "nginx"],
-        ["Docker", "docker"],
-        ["Gitea", "gitea"],
-        ["Cloudflare", "cloudflare"]
-      ];
-      require alias("@partials/techStack.php");
-      ?>
     </div>
-    <img src="/assets/images/projects/homelab/architecture.png" alt="Homelab architecture">
+    <figure class="project-figure">
+      <img class="project-image" src="/assets/images/projects/homelab/gitea.png" alt="Gitea instance">
+      <figcaption>Gitea instance</figcaption>
+    </figure>
   </div>
+  <?php
+  $techStack = [
+    ["Debian", "debian"],
+    ["BASH", "bash"],
+    ["Nginx", "nginx"],
+    ["Docker", "docker"],
+    ["Gitea", "gitea"],
+    ["Cloudflare", "cloudflare"]
+  ];
+  require alias("@partials/techStack.php");
+  ?>
 </section>
 
 <hr>
@@ -66,12 +59,16 @@
       </p>
       <?php
       $projectLinks = [
-        ["Production", "https://homelab.nicolldouglas.dev"]
+        ["Site", "https://homelab.nicolldouglas.dev"],
+        ["Source code", "https://github.com/nicoll-douglas/homelab-blog"]
       ];
       require alias("@partials/projectLinks.php");
       ?>
     </div>
-    <img class="project-image" src="/assets/images/projects/blog/home.png" alt="Homelab blog home">
+    <figure class="project-figure">
+      <img class="project-image" src="/assets/images/projects/blog/home.png" alt="Homelab blog home">
+      <figcaption>Home page</figcaption>
+    </figure>
   </div>
   <?php
   $techStack = [
@@ -90,7 +87,7 @@
   <?php
   $projectTitle = "Meshara";
   $projectDate = "Jan 2025 - Present";
-  $projectTags = ["Full-stack Dev", "DevOps", "UI/UX Design"];
+  $projectTags = ["Full-stack Dev", "DevOps"];
   require alias("@partials/projectHeaders.php");
   ?>
 
@@ -102,18 +99,20 @@
       <p>Handling everything from design to code, to frontend, backend, deployment, and more, it's been a full-stack, end-to-end project that balances creative iteration, client communication, and technical versatility.</p>
       <?php
       $projectLinks = [
-        ["Production & Staging", "https://meshara.net"]
+        ["Site", "https://meshara.net"]
       ];
       require alias("@partials/projectLinks.php");
       ?>
     </div>
-    <img class="project-image" src="/assets/images/projects/meshara/new.png" alt="Meshara home">
+    <figure class="project-figure">
+      <img class="project-image" src="/assets/images/projects/meshara/new.png" alt="Meshara home">
+      <figcaption>Home page</figcaption>
+    </figure>
   </div>
 
 
   <?php
   $techStack = [
-    ["Figma", "figma"],
     ["Next.js", "nextJs"],
     ["MongoDB", "mongoDb"],
     ["Nginx", "nginx"],
@@ -150,9 +149,12 @@
       require alias("@partials/projectLinks.php");
       ?>
     </div>
-    <a href="/assets/images/projects/chattr/demo.gif" target="_blank" title="Demo">
-      <img class="project-image" src="/assets/images/projects/chattr/demo.gif" alt="Chattr demo">
-    </a>
+    <figure class="project-figure">
+      <a href="/assets/images/projects/chattr/demo.gif" target="_blank" title="Demo">
+        <img class="project-image" src="/assets/images/projects/chattr/demo.gif" alt="Chattr demo">
+      </a>
+      <figcaption>Demo</figcaption>
+    </figure>
   </div>
 
   <?php

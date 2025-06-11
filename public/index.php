@@ -19,6 +19,7 @@ if (getenv("APP_ENV") === "production") {
 switch ($_SERVER["REQUEST_URI"]) {
   case "/":
     $title = "Nicoll Douglas";
+    $description = "Showcasing web development and DevOps projects, skills, and experience in building modern, scalable digital solutions.";
     $template = false;
     require $head;
     require $home;
@@ -32,6 +33,7 @@ switch ($_SERVER["REQUEST_URI"]) {
     break;
   case "/about":
     $title = "About";
+    $description = "Learn more about Nicoll, a web developer with a strong background in PHP, React, and DevOps practices focused on building reliable, high-performance web applications.";
     require $head;
     require $about;
     require $tail;

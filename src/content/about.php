@@ -15,6 +15,10 @@
         React
       </li>
       <li class="icon-badge">
+        <?php require alias("@icon/php.php") ?>
+        PHP
+      </li>
+      <li class="icon-badge">
         <?php require alias("@icon/docker.php") ?>
         Docker
       </li>
@@ -35,5 +39,9 @@
     </ul>
   </div>
 
-  <img src="/assets/images/avatars/holding-mug.svg" width="250" alt="Author avatar holding a mug">
+  <img
+    id="about-avatar"
+    src="/assets/images/avatars/holding-mug.svg"
+    width="250"
+    alt="Author avatar holding a mug">
 </div>

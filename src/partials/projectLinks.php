@@ -2,7 +2,7 @@
 <ul class="icon-badges">
   <?php foreach ($projectLinks as [$name, $href]): ?>
     <li>
-      <a class="icon-badge link" href="<?= $href ?>" target="_blank">
+      <a class="icon-badge link" href="<?= $href ?>" target="_blank" rel="noopener noreferrer">
         <?php
         echo $name;
         require alias("@icon/externalLink.php");
