@@ -2,7 +2,6 @@
 
 require_once __DIR__ . "/../src/bootstrap.php";
 
-require_once alias("@utils/buffer.php");
 require_once alias("@utils/cache.php");
 
 $head =  alias("@head");
@@ -13,7 +12,9 @@ $about = alias("@content/about.php");
 $contact =  alias("@content/contact.php");
 $notFound = alias("@content/notFound.php");
 
-// cache(3600);
+if (getenv("APP_ENV") === "production") {
+  cache(3600);
+}
 
 switch ($_SERVER["REQUEST_URI"]) {
   case "/":
@@ -42,19 +43,19 @@ switch ($_SERVER["REQUEST_URI"]) {
     require $tail;
     break;
   case "/ssr/home":
-    echo buffer($home);
+    require $home;
     break;
   case "/ssr/projects":
-    echo buffer($projects);
+    require $projects;
     break;
   case "/ssr/about":
-    echo buffer($about);
+    require $about;
     break;
   case "/ssr/contact":
-    echo buffer($contact);
+    require $contact;
     break;
   case "/ssr/not-found":
-    echo buffer($notFound);
+    require $notFound;
     break;
   default:
     http_response_code(404);

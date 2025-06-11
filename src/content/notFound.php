@@ -7,5 +7,6 @@
       <?php require alias("@icon/arrow.php") ?>
     </a>
   </div>
+
   <img src="/assets/images/avatars/confused.svg" alt="Author avatar confused" width="350px">
 </div>
