@@ -2,6 +2,7 @@ import { getPage } from "./pages.js";
 import hydrateNavigation from "./hydrateNavigation.js";
 import updateActiveLink from "./updateActiveLink.js";
 import errorPage from "./errorPage.js";
+import { pageTransitionIn } from "./transitions.js";
 
 /**
  * Function to server-side render page content.
@@ -23,6 +24,7 @@ async function ssr(key) {
     if (!response.ok) {
       throw new Error("SSR request failed.");
     }
+
     main.firstElementChild.innerHTML = html;
   } catch (e) {
     console.error(e);
@@ -31,6 +33,7 @@ async function ssr(key) {
     main.firstElementChild.innerHTML = errorPage;
   }
 
+  pageTransitionIn();
   hydrateNavigation(main.firstElementChild);
   updateActiveLink();
 }

@@ -41,29 +41,4 @@ function getPage(key) {
   };
 }
 
-function orderOfNavigatedPage(nextKey) {
-  const pathname = window.location.pathname;
-  const currentKey = pages.hasOwnProperty(pathname) ? pathname : "not-found";
-
-  if (currentKey === "not-found") return 1;
-  if (currentKey === nextKey) return 0;
-
-  const pageKeys = Object.keys(pages);
-  for (let i = 0; i < pageKeys.length; i++) {
-    const pageKey = pageKeys[i];
-
-    // navigated page key is ahead
-    if (pageKey === currentKey) {
-      return 1;
-    }
-
-    // navigated page key is behind
-    if (pageKey === nextKey) {
-      return -1;
-    }
-  }
-
-  return null;
-}
-
-export { getPage, orderOfNavigatedPage };
+export { getPage };

@@ -7,3 +7,7 @@
   box-shadow: rgb(76, 31, 10, 0.1) 0px 20px 25px -5px,
     rgba(76, 31, 10, 0.04) 0px 10px 10px -5px;
 }
+
+.page-transition-in {
+  opacity: 1;
+}
