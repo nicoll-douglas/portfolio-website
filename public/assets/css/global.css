@@ -43,11 +43,16 @@ h6 {
 
 ul {
   margin: 0.5rem 0;
+  padding-left: 2rem;
+}
+
+p,
+li {
+  line-height: 30px;
+  font-size: 20px;
 }
 
 p {
-  line-height: 30px;
-  font-size: 20px;
   margin: 0.5rem 0;
 }
 
@@ -69,7 +74,7 @@ main > div {
   opacity: 0;
   transition-property: opacity;
   transition-timing-function: ease;
-  transition-duration: 500ms;
+  transition-duration: 400ms;
 }
 
 header {
@@ -109,6 +114,7 @@ header a {
   transition-property: background-color, border-color, color;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-duration: 200ms;
+  font-size: 1rem;
 }
 
 header a:active {

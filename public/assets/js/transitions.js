@@ -4,7 +4,7 @@
 function pageTransitionIn() {
   setTimeout(() => {
     document.querySelector("main > div").classList.add("page-transition-in");
-  }, 250);
+  }, 200);
 }
 
 export { pageTransitionIn };

@@ -5,22 +5,18 @@ const pages = {
   "/": {
     ssr: "/ssr/home",
     title: "Nicoll Douglas",
-    id: "home",
   },
   "/projects": {
     ssr: "/ssr/projects",
     title: "Projects | Nicoll Douglas",
-    id: "projects",
   },
   "/about": {
     ssr: "/ssr/about",
     title: "About | Nicoll Douglas",
-    id: "about",
   },
   "/contact": {
     ssr: "/ssr/contact",
     title: "Contact | Nicoll Douglas",
-    id: "contact",
   },
 };
 
@@ -37,7 +33,6 @@ function getPage(key) {
   return {
     ssr: "/ssr/not-found",
     title: "404 Not Found",
-    id: "not-found",
   };
 }
 

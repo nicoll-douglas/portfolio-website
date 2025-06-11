@@ -6,18 +6,18 @@
       <?php require __DIR__ . "/../partials/icons/mail.php" ?>
       dev.nicoll.douglas@gmail.com
     </a>
-    <h2>Connect</h2>
-    <ul id="socials">
+    <h2 class="top-5">Connect</h2>
+    <ul class="icon-badges">
       <li>
         <a class="link icon-badge" href="https://github.com/nicoll-douglas">
           <?php require __DIR__ . "/../partials/icons/github.php" ?>
-          GitHub
+          @nicoll-douglas
         </a>
       </li>
       <li>
         <a class="link icon-badge" href="https://www.linkedin.com/in/nicoll-douglas/">
           <?php require __DIR__ . "/../partials/icons/linkedin.php" ?>
-          LinkedIn
+          @nicoll-douglas
         </a>
       </li>
     </ul>

@@ -19,7 +19,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=block" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/page.css">
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/utilities.css">
   <link rel="shortcut icon" href="/assets/images/icon.png" type="image/png">
@@ -53,12 +52,5 @@
   <?php
 
   ?>
-  <main id="<?= match ($_SERVER["REQUEST_URI"]) {
-              "/" => "home",
-              "/about" => "about",
-              "/contact" => "contact",
-              "/projects" => "projects",
-              default => "not-found"
-            }
-            ?>">
+  <main>
     <div>

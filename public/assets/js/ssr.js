@@ -10,10 +10,9 @@ import { pageTransitionIn } from "./transitions.js";
  */
 async function ssr(key) {
   const main = document.querySelector("main");
-  const { title, ssr, id } = getPage(key);
+  const { title, ssr } = getPage(key);
 
   document.title = title;
-  main.id = id;
 
   main.firstElementChild.remove();
   main.appendChild(document.createElement("div"));
@@ -29,7 +28,6 @@ async function ssr(key) {
   } catch (e) {
     console.error(e);
     document.title = "Oops!";
-    main.id = "error";
     main.firstElementChild.innerHTML = errorPage;
   }
 
