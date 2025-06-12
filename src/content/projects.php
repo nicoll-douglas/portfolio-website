@@ -106,7 +106,7 @@
     </div>
     <figure class="project-figure">
       <img class="project-image" src="/assets/images/projects/meshara/new.png" alt="Meshara home">
-      <figcaption>Home page</figcaption>
+      <figcaption>Site hero</figcaption>
     </figure>
   </div>
 

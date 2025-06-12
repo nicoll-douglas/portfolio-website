@@ -100,7 +100,7 @@ hr {
   border-left: none;
   border-right: none;
   border-top: none;
-  border-bottom: 2px dashed var(--brown-5);
+  border-bottom: 2px dotted var(--brown-5);
   display: block;
   margin: 2.5rem 0;
 }
