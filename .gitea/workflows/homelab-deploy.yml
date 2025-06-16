@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Add hosts Entry
+      - name: Set up DNS resolution
         run: |
           echo "192.168.1.5 gitea.nicolldouglas.local" | sudo tee -a /etc/hosts
+          git config --global http.sslVerify false
 
       - name: Checkout Code
         uses: actions/checkout@v4
