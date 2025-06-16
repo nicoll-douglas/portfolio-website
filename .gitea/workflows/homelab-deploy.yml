@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        run: |
+          echo "192.168.1.5 gitea.nicolldouglas.local" | sudo tee -a /etc/hosts
+        with:
+          token: ${{ secrets.GITEA_TOKEN }}
 
       - name: Docker Login
         uses: docker/login-action@v3
