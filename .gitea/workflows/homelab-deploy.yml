@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Set up DNS resolution
         run: |
-          echo "192.168.1.5 gitea.nicolldouglas.local" | sudo tee -a /etc/hosts
+          echo "${{ vars.SSH_HOST }} ${{ vars.REPO_HOST }}" | sudo tee -a /etc/hosts
           git config --global http.sslVerify false
 
       - name: Checkout Code
@@ -40,7 +40,7 @@ jobs:
     steps:
       - name: Set up DNS resolution
         run: |
-          echo "192.168.1.5 gitea.nicolldouglas.local" | sudo tee -a /etc/hosts
+          echo "${{ vars.SSH_HOST }} ${{ vars.REPO_HOST }}" | sudo tee -a /etc/hosts
           git config --global http.sslVerify false
 
       - name: Checkout Code
